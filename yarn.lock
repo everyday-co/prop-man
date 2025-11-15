@@ -481,6 +481,35 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@anthropic-ai/claude-agent-sdk@npm:^0.1.42":
+  version: 0.1.42
+  resolution: "@anthropic-ai/claude-agent-sdk@npm:0.1.42"
+  dependencies:
+    "@img/sharp-darwin-arm64": "npm:^0.33.5"
+    "@img/sharp-darwin-x64": "npm:^0.33.5"
+    "@img/sharp-linux-arm": "npm:^0.33.5"
+    "@img/sharp-linux-arm64": "npm:^0.33.5"
+    "@img/sharp-linux-x64": "npm:^0.33.5"
+    "@img/sharp-win32-x64": "npm:^0.33.5"
+  peerDependencies:
+    zod: ^3.24.1
+  dependenciesMeta:
+    "@img/sharp-darwin-arm64":
+      optional: true
+    "@img/sharp-darwin-x64":
+      optional: true
+    "@img/sharp-linux-arm":
+      optional: true
+    "@img/sharp-linux-arm64":
+      optional: true
+    "@img/sharp-linux-x64":
+      optional: true
+    "@img/sharp-win32-x64":
+      optional: true
+  checksum: 10c0/393da9f55ab701bdbdaf972f14bbfe47426956135b920d10b547bbe89d8a3f1d684d8427c0987a471031e745c9ae53b6382e19eef183a9be403b5314cb5c7f5c
+  languageName: node
+  linkType: hard
+
 "@apm-js-collab/code-transformer@npm:^0.8.0":
   version: 0.8.2
   resolution: "@apm-js-collab/code-transformer@npm:0.8.2"
@@ -7782,7 +7811,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@img/sharp-darwin-arm64@npm:0.33.5":
+"@img/sharp-darwin-arm64@npm:0.33.5, @img/sharp-darwin-arm64@npm:^0.33.5":
   version: 0.33.5
   resolution: "@img/sharp-darwin-arm64@npm:0.33.5"
   dependencies:
@@ -7806,7 +7835,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@img/sharp-darwin-x64@npm:0.33.5":
+"@img/sharp-darwin-x64@npm:0.33.5, @img/sharp-darwin-x64@npm:^0.33.5":
   version: 0.33.5
   resolution: "@img/sharp-darwin-x64@npm:0.33.5"
   dependencies:
@@ -7949,7 +7978,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@img/sharp-linux-arm64@npm:0.33.5":
+"@img/sharp-linux-arm64@npm:0.33.5, @img/sharp-linux-arm64@npm:^0.33.5":
   version: 0.33.5
   resolution: "@img/sharp-linux-arm64@npm:0.33.5"
   dependencies:
@@ -7973,7 +8002,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@img/sharp-linux-arm@npm:0.33.5":
+"@img/sharp-linux-arm@npm:0.33.5, @img/sharp-linux-arm@npm:^0.33.5":
   version: 0.33.5
   resolution: "@img/sharp-linux-arm@npm:0.33.5"
   dependencies:
@@ -8033,7 +8062,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@img/sharp-linux-x64@npm:0.33.5":
+"@img/sharp-linux-x64@npm:0.33.5, @img/sharp-linux-x64@npm:^0.33.5":
   version: 0.33.5
   resolution: "@img/sharp-linux-x64@npm:0.33.5"
   dependencies:
@@ -8144,7 +8173,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@img/sharp-win32-x64@npm:0.33.5":
+"@img/sharp-win32-x64@npm:0.33.5, @img/sharp-win32-x64@npm:^0.33.5":
   version: 0.33.5
   resolution: "@img/sharp-win32-x64@npm:0.33.5"
   conditions: os=win32 & cpu=x64
@@ -56182,6 +56211,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "twenty@workspace:."
   dependencies:
+    "@anthropic-ai/claude-agent-sdk": "npm:^0.1.42"
     "@apollo/client": "npm:^3.7.17"
     "@babel/core": "npm:^7.14.5"
     "@babel/preset-react": "npm:^7.14.5"
