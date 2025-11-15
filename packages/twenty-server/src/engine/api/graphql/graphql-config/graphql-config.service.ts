@@ -19,6 +19,7 @@ import { NodeEnvironment } from 'src/engine/core-modules/twenty-config/interface
 
 import { WorkspaceSchemaFactory } from 'src/engine/api/graphql/workspace-schema.factory';
 import { type AuthContext } from 'src/engine/core-modules/auth/types/auth-context.type';
+import { PropertyManagementModule } from 'src/app/property-management/property-management.module';
 import { CoreEngineModule } from 'src/engine/core-modules/core-engine.module';
 import { ExceptionHandlerService } from 'src/engine/core-modules/exception-handler/exception-handler.service';
 import { useSentryTracing } from 'src/engine/core-modules/exception-handler/hooks/use-sentry-tracing';
@@ -68,7 +69,7 @@ export class GraphQLConfigService
 
     const config: YogaDriverConfig = {
       autoSchemaFile: true,
-      include: [CoreEngineModule],
+      include: [CoreEngineModule, PropertyManagementModule],
       conditionalSchema: async (context) => {
         let user: UserEntity | null | undefined;
         let workspace: WorkspaceEntity | undefined;

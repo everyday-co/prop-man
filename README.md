@@ -28,6 +28,16 @@ See:
 🚀 [Self-hosting](https://docs.twenty.com/developers/self-hosting/docker-compose)
 🖥️ [Local Setup](https://docs.twenty.com/developers/local-setup)
 
+## Everyday PM Module
+
+Everyday now includes a Property Management big app that lives alongside the core CRM experience. For product direction, architecture, and data model details see:
+
+- [Product Requirements - Everyday CRM + PM](./docs/prd-everyday-crm-pm.md)
+- [Epics & User Flows](./docs/epics-everyday-crm-pm.md)
+- [Architecture Overview](./docs/architecture-crm-pm.md)
+- [Property Management Data Model](./docs/data-model-pm.md)
+- [CRM + PM Glossary](./docs/glossary-crm-pm.md)
+
 # Does the world need another CRM?
 
 We built Twenty for three reasons:

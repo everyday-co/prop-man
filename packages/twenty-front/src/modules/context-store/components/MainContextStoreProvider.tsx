@@ -32,11 +32,12 @@ const getViewId = (
 
 export const MainContextStoreProvider = () => {
   const location = useLocation();
-  const isRecordIndexPage = isMatchingLocation(
-    location,
-    AppPath.RecordIndexPage,
-  );
-  const isRecordShowPage = isMatchingLocation(location, AppPath.RecordShowPage);
+  const isRecordIndexPage =
+    isMatchingLocation(location, AppPath.RecordIndexPage) ||
+    isMatchingLocation(location, AppPath.PmRecordIndexPage);
+  const isRecordShowPage =
+    isMatchingLocation(location, AppPath.RecordShowPage) ||
+    isMatchingLocation(location, AppPath.PmRecordShowPage);
   const isSettingsPage = useIsSettingsPage();
 
   const objectNamePlural = useParams().objectNamePlural ?? '';

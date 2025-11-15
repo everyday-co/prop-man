@@ -2997,12 +2997,39 @@ export type PlaceDetailsResult = {
   state?: Maybe<Scalars['String']>;
 };
 
+export type PortfolioSummary = {
+  __typename?: 'PortfolioSummary';
+  month: Scalars['String'];
+  overallOccupancyPercent: Scalars['Float'];
+  portfolioCollected: Scalars['Float'];
+  portfolioDelinquent: Scalars['Float'];
+  portfolioRentRoll: Scalars['Float'];
+  properties: Array<PropertySummary>;
+  totalOpenWorkOrders: Scalars['Int'];
+  totalProperties: Scalars['Int'];
+  totalUnits: Scalars['Int'];
+};
+
 export type PostgresCredentials = {
   __typename?: 'PostgresCredentials';
   id: Scalars['UUID'];
   password: Scalars['String'];
   user: Scalars['String'];
   workspaceId: Scalars['UUID'];
+};
+
+export type PropertySummary = {
+  __typename?: 'PropertySummary';
+  address?: Maybe<Scalars['String']>;
+  monthlyCollected: Scalars['Float'];
+  monthlyDelinquent: Scalars['Float'];
+  monthlyRentRoll: Scalars['Float'];
+  name: Scalars['String'];
+  occupancyPercent: Scalars['Float'];
+  occupiedUnits: Scalars['Int'];
+  openWorkOrderCount: Scalars['Int'];
+  propertyId: Scalars['ID'];
+  totalUnits: Scalars['Int'];
 };
 
 export type PublicDomain = {
@@ -3112,6 +3139,8 @@ export type Query = {
   listPlans: Array<BillingPlanOutput>;
   object: Object;
   objects: ObjectConnection;
+  portfolioSummary: PortfolioSummary;
+  propertyDashboard: PropertySummary;
   search: SearchResultConnection;
   validatePasswordResetToken: ValidatePasswordResetTokenOutput;
   versionInfo: VersionInfo;
@@ -3358,6 +3387,17 @@ export type QueryGetTimelineThreadsFromPersonIdArgs = {
   page: Scalars['Int'];
   pageSize: Scalars['Int'];
   personId: Scalars['UUID'];
+};
+
+
+export type QueryPortfolioSummaryArgs = {
+  month: Scalars['String'];
+};
+
+
+export type QueryPropertyDashboardArgs = {
+  month: Scalars['String'];
+  propertyId: Scalars['ID'];
 };
 
 
@@ -4677,6 +4717,21 @@ export type UpdatePageLayoutWithTabsAndWidgetsMutationVariables = Exact<{
 
 export type UpdatePageLayoutWithTabsAndWidgetsMutation = { __typename?: 'Mutation', updatePageLayoutWithTabsAndWidgets: { __typename?: 'PageLayout', id: any, name: string, type: PageLayoutType, objectMetadataId?: any | null, createdAt: string, updatedAt: string, deletedAt?: string | null, tabs?: Array<{ __typename?: 'PageLayoutTab', id: any, title: string, position: number, pageLayoutId: any, createdAt: string, updatedAt: string, widgets?: Array<{ __typename?: 'PageLayoutWidget', id: any, title: string, type: WidgetType, objectMetadataId?: any | null, createdAt: string, updatedAt: string, deletedAt?: string | null, pageLayoutTabId: any, gridPosition: { __typename?: 'GridPosition', column: number, columnSpan: number, row: number, rowSpan: number }, configuration?: { __typename?: 'AggregateChartConfiguration', graphType: GraphType, aggregateFieldMetadataId: any, aggregateOperation: AggregateOperations, label?: string | null, displayDataLabel?: boolean | null, format?: string | null, description?: string | null, filter?: any | null, timezone?: string | null, firstDayOfTheWeek?: number | null } | { __typename?: 'BarChartConfiguration', graphType: GraphType, aggregateFieldMetadataId: any, aggregateOperation: AggregateOperations, primaryAxisGroupByFieldMetadataId: any, primaryAxisGroupBySubFieldName?: string | null, primaryAxisDateGranularity?: ObjectRecordGroupByDateGranularity | null, primaryAxisOrderBy?: GraphOrderBy | null, secondaryAxisGroupByFieldMetadataId?: any | null, secondaryAxisGroupBySubFieldName?: string | null, secondaryAxisGroupByDateGranularity?: ObjectRecordGroupByDateGranularity | null, secondaryAxisOrderBy?: GraphOrderBy | null, omitNullValues?: boolean | null, axisNameDisplay?: AxisNameDisplay | null, displayDataLabel?: boolean | null, rangeMin?: number | null, rangeMax?: number | null, color?: string | null, description?: string | null, filter?: any | null, groupMode?: BarChartGroupMode | null, timezone?: string | null, firstDayOfTheWeek?: number | null } | { __typename?: 'GaugeChartConfiguration', graphType: GraphType, aggregateFieldMetadataId: any, aggregateOperation: AggregateOperations, displayDataLabel?: boolean | null, color?: string | null, description?: string | null, filter?: any | null, timezone?: string | null, firstDayOfTheWeek?: number | null } | { __typename?: 'IframeConfiguration', url?: string | null } | { __typename?: 'LineChartConfiguration', graphType: GraphType, aggregateFieldMetadataId: any, aggregateOperation: AggregateOperations, primaryAxisGroupByFieldMetadataId: any, primaryAxisGroupBySubFieldName?: string | null, primaryAxisDateGranularity?: ObjectRecordGroupByDateGranularity | null, primaryAxisOrderBy?: GraphOrderBy | null, secondaryAxisGroupByFieldMetadataId?: any | null, secondaryAxisGroupBySubFieldName?: string | null, secondaryAxisGroupByDateGranularity?: ObjectRecordGroupByDateGranularity | null, secondaryAxisOrderBy?: GraphOrderBy | null, omitNullValues?: boolean | null, axisNameDisplay?: AxisNameDisplay | null, displayDataLabel?: boolean | null, rangeMin?: number | null, rangeMax?: number | null, color?: string | null, description?: string | null, filter?: any | null, isStacked?: boolean | null, timezone?: string | null, firstDayOfTheWeek?: number | null } | { __typename?: 'PieChartConfiguration', graphType: GraphType, groupByFieldMetadataId: any, aggregateFieldMetadataId: any, aggregateOperation: AggregateOperations, groupBySubFieldName?: string | null, dateGranularity?: ObjectRecordGroupByDateGranularity | null, orderBy?: GraphOrderBy | null, displayDataLabel?: boolean | null, color?: string | null, description?: string | null, filter?: any | null, timezone?: string | null, firstDayOfTheWeek?: number | null } | null }> | null }> | null } };
 
+export type GetPortfolioSummaryQueryVariables = Exact<{
+  month: Scalars['String'];
+}>;
+
+
+export type GetPortfolioSummaryQuery = { __typename?: 'Query', portfolioSummary: { __typename?: 'PortfolioSummary', month: string, totalProperties: number, totalUnits: number, overallOccupancyPercent: number, portfolioRentRoll: number, portfolioCollected: number, portfolioDelinquent: number, totalOpenWorkOrders: number, properties: Array<{ __typename?: 'PropertySummary', propertyId: string, name: string, address?: string | null, totalUnits: number, occupiedUnits: number, occupancyPercent: number, monthlyRentRoll: number, monthlyCollected: number, monthlyDelinquent: number, openWorkOrderCount: number }> } };
+
+export type GetPropertyDashboardQueryVariables = Exact<{
+  propertyId: Scalars['ID'];
+  month: Scalars['String'];
+}>;
+
+
+export type GetPropertyDashboardQuery = { __typename?: 'Query', propertyDashboard: { __typename?: 'PropertySummary', propertyId: string, name: string, address?: string | null, totalUnits: number, occupiedUnits: number, occupancyPercent: number, monthlyRentRoll: number, monthlyCollected: number, monthlyDelinquent: number, openWorkOrderCount: number } };
+
 export type OnDbEventSubscriptionVariables = Exact<{
   input: OnDbEventInput;
 }>;
@@ -5289,6 +5344,105 @@ export function useUpdatePageLayoutWithTabsAndWidgetsMutation(baseOptions?: Apol
 export type UpdatePageLayoutWithTabsAndWidgetsMutationHookResult = ReturnType<typeof useUpdatePageLayoutWithTabsAndWidgetsMutation>;
 export type UpdatePageLayoutWithTabsAndWidgetsMutationResult = Apollo.MutationResult<UpdatePageLayoutWithTabsAndWidgetsMutation>;
 export type UpdatePageLayoutWithTabsAndWidgetsMutationOptions = Apollo.BaseMutationOptions<UpdatePageLayoutWithTabsAndWidgetsMutation, UpdatePageLayoutWithTabsAndWidgetsMutationVariables>;
+export const GetPortfolioSummaryDocument = gql`
+    query GetPortfolioSummary($month: String!) {
+  portfolioSummary(month: $month) {
+    month
+    totalProperties
+    totalUnits
+    overallOccupancyPercent
+    portfolioRentRoll
+    portfolioCollected
+    portfolioDelinquent
+    totalOpenWorkOrders
+    properties {
+      propertyId
+      name
+      address
+      totalUnits
+      occupiedUnits
+      occupancyPercent
+      monthlyRentRoll
+      monthlyCollected
+      monthlyDelinquent
+      openWorkOrderCount
+    }
+  }
+}
+    `;
+
+/**
+ * __useGetPortfolioSummaryQuery__
+ *
+ * To run a query within a React component, call `useGetPortfolioSummaryQuery` and pass it any options that fit your needs.
+ * When your component renders, `useGetPortfolioSummaryQuery` returns an object from Apollo Client that contains loading, error, and data properties
+ * you can use to render your UI.
+ *
+ * @param baseOptions options that will be passed into the query, supported options are listed on: https://www.apollographql.com/docs/react/api/react-hooks/#options;
+ *
+ * @example
+ * const { data, loading, error } = useGetPortfolioSummaryQuery({
+ *   variables: {
+ *      month: // value for 'month'
+ *   },
+ * });
+ */
+export function useGetPortfolioSummaryQuery(baseOptions: Apollo.QueryHookOptions<GetPortfolioSummaryQuery, GetPortfolioSummaryQueryVariables>) {
+        const options = {...defaultOptions, ...baseOptions}
+        return Apollo.useQuery<GetPortfolioSummaryQuery, GetPortfolioSummaryQueryVariables>(GetPortfolioSummaryDocument, options);
+      }
+export function useGetPortfolioSummaryLazyQuery(baseOptions?: Apollo.LazyQueryHookOptions<GetPortfolioSummaryQuery, GetPortfolioSummaryQueryVariables>) {
+          const options = {...defaultOptions, ...baseOptions}
+          return Apollo.useLazyQuery<GetPortfolioSummaryQuery, GetPortfolioSummaryQueryVariables>(GetPortfolioSummaryDocument, options);
+        }
+export type GetPortfolioSummaryQueryHookResult = ReturnType<typeof useGetPortfolioSummaryQuery>;
+export type GetPortfolioSummaryLazyQueryHookResult = ReturnType<typeof useGetPortfolioSummaryLazyQuery>;
+export type GetPortfolioSummaryQueryResult = Apollo.QueryResult<GetPortfolioSummaryQuery, GetPortfolioSummaryQueryVariables>;
+export const GetPropertyDashboardDocument = gql`
+    query GetPropertyDashboard($propertyId: ID!, $month: String!) {
+  propertyDashboard(propertyId: $propertyId, month: $month) {
+    propertyId
+    name
+    address
+    totalUnits
+    occupiedUnits
+    occupancyPercent
+    monthlyRentRoll
+    monthlyCollected
+    monthlyDelinquent
+    openWorkOrderCount
+  }
+}
+    `;
+
+/**
+ * __useGetPropertyDashboardQuery__
+ *
+ * To run a query within a React component, call `useGetPropertyDashboardQuery` and pass it any options that fit your needs.
+ * When your component renders, `useGetPropertyDashboardQuery` returns an object from Apollo Client that contains loading, error, and data properties
+ * you can use to render your UI.
+ *
+ * @param baseOptions options that will be passed into the query, supported options are listed on: https://www.apollographql.com/docs/react/api/react-hooks/#options;
+ *
+ * @example
+ * const { data, loading, error } = useGetPropertyDashboardQuery({
+ *   variables: {
+ *      propertyId: // value for 'propertyId'
+ *      month: // value for 'month'
+ *   },
+ * });
+ */
+export function useGetPropertyDashboardQuery(baseOptions: Apollo.QueryHookOptions<GetPropertyDashboardQuery, GetPropertyDashboardQueryVariables>) {
+        const options = {...defaultOptions, ...baseOptions}
+        return Apollo.useQuery<GetPropertyDashboardQuery, GetPropertyDashboardQueryVariables>(GetPropertyDashboardDocument, options);
+      }
+export function useGetPropertyDashboardLazyQuery(baseOptions?: Apollo.LazyQueryHookOptions<GetPropertyDashboardQuery, GetPropertyDashboardQueryVariables>) {
+          const options = {...defaultOptions, ...baseOptions}
+          return Apollo.useLazyQuery<GetPropertyDashboardQuery, GetPropertyDashboardQueryVariables>(GetPropertyDashboardDocument, options);
+        }
+export type GetPropertyDashboardQueryHookResult = ReturnType<typeof useGetPropertyDashboardQuery>;
+export type GetPropertyDashboardLazyQueryHookResult = ReturnType<typeof useGetPropertyDashboardLazyQuery>;
+export type GetPropertyDashboardQueryResult = Apollo.QueryResult<GetPropertyDashboardQuery, GetPropertyDashboardQueryVariables>;
 export const OnDbEventDocument = gql`
     subscription OnDbEvent($input: OnDbEventInput!) {
   onDbEvent(input: $input) {

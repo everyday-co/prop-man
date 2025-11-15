@@ -9,6 +9,7 @@ import { DefaultLayout } from '@/ui/layout/page/components/DefaultLayout';
 import { AppPath } from 'twenty-shared/types';
 
 import {
+  Navigate,
   createBrowserRouter,
   createRoutesFromElements,
   Route,
@@ -27,6 +28,12 @@ import { CreateWorkspace } from '~/pages/onboarding/CreateWorkspace';
 import { InviteTeam } from '~/pages/onboarding/InviteTeam';
 import { PaymentSuccess } from '~/pages/onboarding/PaymentSuccess';
 import { SyncEmails } from '~/pages/onboarding/SyncEmails';
+import { CrmRouteRedirect } from '@/navigation/components/CrmRouteRedirect';
+import { PortfolioDashboardPage } from '@/property-management/pages/PortfolioDashboardPage';
+import { PropertyDashboardPage } from '@/property-management/pages/PropertyDashboardPage';
+import { PMAccountingPage } from '@/property-management/pages/PMAccountingPage';
+import { PMInventoryPage } from '@/property-management/pages/PMInventoryPage';
+import { PMInspectionsPage } from '@/property-management/pages/PMInspectionsPage';
 
 export const useCreateAppRouter = (
   isFunctionSettingsEnabled?: boolean,
@@ -40,6 +47,7 @@ export const useCreateAppRouter = (
         // to set scroll position before the page is rendered
         loader={async () => Promise.resolve(null)}
       >
+        <Route path="/crm/*" element={<CrmRouteRedirect />} />
         <Route element={<DefaultLayout />}>
           <Route path={AppPath.Verify} element={<VerifyLoginTokenEffect />} />
           <Route path={AppPath.VerifyEmail} element={<VerifyEmailEffect />} />
@@ -73,6 +81,40 @@ export const useCreateAppRouter = (
             }
           />
           <Route path={AppPath.NotFoundWildcard} element={<NotFound />} />
+        </Route>
+        <Route path="/pm" element={<DefaultLayout />}>
+          <Route path="dashboard" element={<PortfolioDashboardPage />} />
+          <Route
+            path="property/:propertyId"
+            element={<PropertyDashboardPage />}
+          />
+          <Route path="accounting" element={<PMAccountingPage />} />
+          <Route path="inventory" element={<PMInventoryPage />} />
+          <Route path="inspections" element={<PMInspectionsPage />} />
+          <Route
+            path="properties"
+            element={<Navigate to="/pm/objects/properties" replace />}
+          />
+          <Route
+            path="units"
+            element={<Navigate to="/pm/objects/units" replace />}
+          />
+          <Route
+            path="leases"
+            element={<Navigate to="/pm/objects/leases" replace />}
+          />
+          <Route
+            path="work-orders"
+            element={<Navigate to="/pm/objects/workOrders" replace />}
+          />
+          <Route
+            path="objects/:objectNamePlural"
+            element={<RecordIndexPage />}
+          />
+          <Route
+            path="object/:objectNameSingular/:objectRecordId"
+            element={<RecordShowPage />}
+          />
         </Route>
         <Route element={<BlankLayout />}>
           <Route path={AppPath.Authorize} element={<Authorize />} />

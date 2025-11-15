@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import { useRecoilValue } from 'recoil';
 
+import { AppModeSwitcher } from '@/navigation/components/AppModeSwitcher';
 import { MultiWorkspaceDropdownButton } from '@/ui/navigation/navigation-drawer/components/MultiWorkspaceDropdown/MultiWorkspaceDropdownButton';
 import { useIsMobile } from '@/ui/utilities/responsive/hooks/useIsMobile';
 
@@ -27,6 +28,12 @@ const StyledNavigationDrawerCollapseButton = styled(
   width: ${({ theme }) => theme.spacing(4)};
 `;
 
+const StyledAppModeSwitcher = styled(AppModeSwitcher)`
+  flex: 1;
+  margin-left: ${({ theme }) => theme.spacing(1)};
+  max-width: 220px;
+`;
+
 type NavigationDrawerHeaderProps = {
   showCollapseButton: boolean;
 };
@@ -43,6 +50,7 @@ export const NavigationDrawerHeader = ({
   return (
     <StyledContainer>
       <MultiWorkspaceDropdownButton />
+      {!isMobile && isNavigationDrawerExpanded && <StyledAppModeSwitcher />}
       {!isMobile && isNavigationDrawerExpanded && (
         <StyledNavigationDrawerCollapseButton
           direction="left"

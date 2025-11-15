@@ -31,6 +31,7 @@ import { TwentyORMModule } from 'src/engine/twenty-orm/twenty-orm.module';
 import { WorkspaceCacheStorageModule } from 'src/engine/workspace-cache-storage/workspace-cache-storage.module';
 import { ModulesModule } from 'src/modules/modules.module';
 
+import { PropertyManagementModule } from './app/property-management/property-management.module';
 import { ClickHouseModule } from './database/clickHouse/clickHouse.module';
 import { CoreEngineModule } from './engine/core-modules/core-engine.module';
 import { I18nModule } from './engine/core-modules/i18n/i18n.module';
@@ -76,6 +77,8 @@ const MIGRATED_REST_METHODS = [
     I18nModule,
     // Conditional modules
     ...AppModule.getConditionalModules(),
+    // Domain modules
+    PropertyManagementModule,
   ],
 })
 export class AppModule {

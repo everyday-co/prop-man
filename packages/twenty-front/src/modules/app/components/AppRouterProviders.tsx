@@ -14,6 +14,7 @@ import { ApolloCoreProvider } from '@/object-metadata/components/ApolloCoreProvi
 import { ObjectMetadataItemsLoadEffect } from '@/object-metadata/components/ObjectMetadataItemsLoadEffect';
 import { ObjectMetadataItemsProvider } from '@/object-metadata/components/ObjectMetadataItemsProvider';
 import { PrefetchDataProvider } from '@/prefetch/components/PrefetchDataProvider';
+import { AppModeSyncEffect } from '@/navigation/effect-components/AppModeSyncEffect';
 import { DialogManager } from '@/ui/feedback/dialog-manager/components/DialogManager';
 import { DialogComponentInstanceContext } from '@/ui/feedback/dialog-manager/contexts/DialogComponentInstanceContext';
 import { SnackBarProvider } from '@/ui/feedback/snack-bar-manager/components/SnackBarProvider';
@@ -68,6 +69,7 @@ export const AppRouterProviders = () => {
                         <MainContextStoreProvider />
                       </PrefetchDataProvider>
                       <PageChangeEffect />
+                      <AppModeSyncEffect />
                     </ObjectMetadataItemsProvider>
                   </ApolloCoreProvider>
                 </AuthProvider>

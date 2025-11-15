@@ -129,10 +129,9 @@ export const PageChangeEffect = () => {
   ]);
 
   useEffect(() => {
-    const isLeavingRecordIndexPage = !!matchPath(
-      AppPath.RecordIndexPage,
-      previousLocation,
-    );
+    const isLeavingRecordIndexPage =
+      !!matchPath(AppPath.RecordIndexPage, previousLocation) ||
+      !!matchPath(AppPath.PmRecordIndexPage, previousLocation);
 
     if (isLeavingRecordIndexPage) {
       if (contextStoreCurrentViewType === ContextStoreViewType.Table) {
@@ -148,11 +147,13 @@ export const PageChangeEffect = () => {
     }
 
     switch (true) {
-      case isMatchingLocation(location, AppPath.RecordIndexPage): {
+      case isMatchingLocation(location, AppPath.RecordIndexPage) ||
+        isMatchingLocation(location, AppPath.PmRecordIndexPage): {
         resetFocusStackToRecordIndex();
         break;
       }
-      case isMatchingLocation(location, AppPath.RecordShowPage): {
+      case isMatchingLocation(location, AppPath.RecordShowPage) ||
+        isMatchingLocation(location, AppPath.PmRecordShowPage): {
         resetFocusStackToFocusItem({
           focusStackItem: {
             focusId: PageFocusId.RecordShowPage,
