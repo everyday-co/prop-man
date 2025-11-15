@@ -467,6 +467,11 @@ msgstr "Konto tillagt framgångsrikt. Synkronisering startad."
 msgid "Account Deletion"
 msgstr "Kontoradering"
 
+#. js-lingui-id: WcvywZ
+#: src/modules/property-management/pages/PMAccountingPage.tsx
+msgid "Accounting"
+msgstr ""
+
 #. js-lingui-id: bPwFdf
 #: src/pages/settings/accounts/SettingsAccountsEmails.tsx
 #: src/pages/settings/accounts/SettingsAccountsCalendars.tsx
@@ -526,6 +531,11 @@ msgstr "Aktivera arbetsfl\\u00f6de"
 #: src/modules/settings/admin-panel/health-status/components/SettingsAdminQueueJobsTable.tsx
 msgid "Active"
 msgstr "Aktiv"
+
+#. js-lingui-id: TICM4L
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Active and upcoming leases for this property."
+msgstr ""
 
 #. js-lingui-id: Mue4oc
 #: src/pages/settings/workspace/SettingsApiWebhooks.tsx
@@ -1997,6 +2007,13 @@ msgstr "Koda din funktion"
 msgid "Collapse"
 msgstr "Kollapsa"
 
+#. js-lingui-id: Jpq3gO
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Collected"
+msgstr ""
+
 #. js-lingui-id: Xose0w
 #: src/modules/settings/accounts/components/SettingsAccountsCalendarChannelsGeneral.tsx
 msgid "Color code"
@@ -3103,6 +3120,13 @@ msgstr "Raderade poster"
 #: src/modules/settings/two-factor-authentication/components/DeleteTwoFactorAuthenticationMethod.tsx
 msgid "Deleting this method will remove it permanently from your account."
 msgstr "Genom att radera denna metod kommer den permanent att tas bort från ditt konto."
+
+#. js-lingui-id: 9KjSFX
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Delinquent"
+msgstr ""
 
 #. js-lingui-id: Cko536
 #: src/modules/workflow/workflow-steps/workflow-actions/find-records-action/components/WorkflowFindRecordsSorts.tsx
@@ -4959,6 +4983,11 @@ msgstr "Inmatningsinställningar"
 msgid "Insert a JSON input, then press \"Run\" to test your function."
 msgstr "Sätt in en JSON-inmatning och tryck sedan på \"Kör\" för att testa din funktion."
 
+#. js-lingui-id: Cz44G9
+#: src/modules/property-management/pages/PMInspectionsPage.tsx
+msgid "Inspections"
+msgstr ""
+
 #. js-lingui-id: 4ZM8/a
 #: src/modules/settings/roles/role-permissions/permission-flags/components/SettingsRolePermissionsSettingsSection.tsx
 msgid "Install and manage applications"
@@ -5079,6 +5108,11 @@ msgstr "Ogiltig verifieringskod. Var god försök igen."
 #: src/modules/auth/sign-in-up/hooks/useHandleResetPassword.ts
 msgid "Invalid workspace"
 msgstr "Ogiltig arbetsyta"
+
+#. js-lingui-id: ZrsGjm
+#: src/modules/property-management/pages/PMInventoryPage.tsx
+msgid "Inventory"
+msgstr ""
 
 #. js-lingui-id: ZR1dJ4
 #: src/modules/ui/navigation/navigation-drawer/components/MultiWorkspaceDropdown/internal/components/WorkspacesForSignUp.tsx
@@ -5402,6 +5436,16 @@ msgstr "Layout"
 msgid "Layouts"
 msgstr "Layouter"
 
+#. js-lingui-id: /MXLJb
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Lease"
+msgstr ""
+
+#. js-lingui-id: 9U+nt4
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Leases"
+msgstr ""
+
 #. js-lingui-id: 8QyoLb
 #: src/modules/settings/accounts/components/SettingsAccountsConnectionForm.tsx
 msgid "Leave blank if you don't need calendar sync."
@@ -5564,6 +5608,11 @@ msgstr "loop"
 #: src/modules/settings/accounts/components/SettingsAccountsConnectionForm.tsx
 msgid "Mail Account"
 msgstr "E-postkonto"
+
+#. js-lingui-id: 1KleS+
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Maintenance items tied to this property."
+msgstr ""
 
 #. js-lingui-id: n0FHLv
 #: src/modules/settings/roles/role-permissions/permission-flags/components/SettingsRolePermissionsSettingsSection.tsx
@@ -5827,6 +5876,8 @@ msgid "month"
 msgstr "månad"
 
 #. js-lingui-id: HajiZl
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
 #: src/modules/object-record/object-options-dropdown/components/ObjectOptionsDropdownLayoutContent.tsx
 #: src/modules/object-record/object-options-dropdown/components/ObjectOptionsDropdownCustomView.tsx
 #: src/modules/object-record/object-options-dropdown/components/ObjectOptionsDropdownCalendarViewContent.tsx
@@ -5870,6 +5921,11 @@ msgstr "Flytta \\u00e5t v\\u00e4nster"
 #: src/modules/command-menu/pages/page-layout/components/CommandMenuPageLayoutTabSettings.tsx
 msgid "Move right"
 msgstr "Flytta \\u00e5t h\\u00f6ger"
+
+#. js-lingui-id: GVZWYi
+#: src/modules/property-management/pages/PMInspectionsPage.tsx
+msgid "Move-in/out, annual, and custom inspection workflows will be orchestrated from this page."
+msgstr ""
 
 #. js-lingui-id: asWVA5
 #: src/modules/object-record/spreadsheet-import/utils/getSpreadSheetFieldValidationDefinitions.ts
@@ -6359,6 +6415,11 @@ msgstr "Ingen betalningsmetod hittades. Vänligen uppdatera dina faktureringsupp
 msgid "No permissions have been set for individual objects."
 msgstr "Inga behörigheter har satts för enskilda objekt."
 
+#. js-lingui-id: iCcF3g
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "No properties found yet."
+msgstr ""
+
 #. js-lingui-id: ePgApM
 #: src/modules/workflow/workflow-trigger/components/WorkflowEditTriggerManual.tsx
 msgid "No record is required to trigger this workflow"
@@ -6578,6 +6639,13 @@ msgstr "Objekt och fält behörighetsinställningar"
 msgid "Objects created by application"
 msgstr "Objekt skapade av applikationen"
 
+#. js-lingui-id: 1LWGX6
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Occupancy"
+msgstr ""
+
 #. js-lingui-id: BwJKBw
 #: src/modules/settings/admin-panel/health-status/components/SettingsAdminQueueJobsTable.tsx
 msgid "of"
@@ -6717,6 +6785,17 @@ msgstr "Öppna i"
 #: src/modules/auth/sign-in-up/components/EmailVerificationSent.tsx
 msgid "Open Outlook"
 msgstr "Öppna Outlook"
+
+#. js-lingui-id: NrpQ/O
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Open work orders"
+msgstr ""
+
+#. js-lingui-id: 8YNYqL
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Open WOs"
+msgstr ""
 
 #. js-lingui-id: OV5wZZ
 #: src/modules/object-metadata/components/NavigationDrawerOpenedSection.tsx
@@ -7058,6 +7137,11 @@ msgstr "Många"
 msgid "Polish"
 msgstr "Polish"
 
+#. js-lingui-id: GlnsGg
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Portfolio dashboard"
+msgstr ""
+
 #. js-lingui-id: 0nsqwk
 #: src/pages/settings/profile/appearance/components/LocalePicker.tsx
 msgid "Portuguese — Brazil"
@@ -7117,6 +7201,7 @@ msgstr "Prioriterad"
 
 #. js-lingui-id: 1hKEom
 #: src/modules/settings/components/SettingsDnsRecordsTable.tsx
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
 msgid "Priority"
 msgstr "Prioritet"
 
@@ -7153,6 +7238,22 @@ msgstr "Profil - Inställningar"
 #. js-lingui-id: Szskbr
 #: src/modules/settings/security/components/SettingsSecurityEditableProfileFields.tsx
 msgid "Profile Picture"
+msgstr ""
+
+#. js-lingui-id: l/UFPv
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Properties"
+msgstr ""
+
+#. js-lingui-id: 8B+pY5
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Property"
+msgstr ""
+
+#. js-lingui-id: G5r8c8
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Property dashboard"
 msgstr ""
 
 #. js-lingui-id: GVxbU6
@@ -7403,6 +7504,24 @@ msgstr "Ta bort sortering?"
 #: src/modules/billing/components/SettingsBillingSubscriptionInfo.tsx
 msgid "Renewal date"
 msgstr "Förnyelsedatum"
+
+#. js-lingui-id: zb77GC
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Rent"
+msgstr ""
+
+#. js-lingui-id: bAERwb
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Rent roll"
+msgstr ""
+
+#. js-lingui-id: PDaAhy
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Rent roll vs collected trend coming soon."
+msgstr ""
 
 #. js-lingui-id: Ee8JBW
 #: src/modules/workflow/workflow-steps/workflow-actions/form-action/components/WorkflowEditActionFormBuilder.tsx
@@ -8480,6 +8599,9 @@ msgstr "Delstat"
 #: src/modules/settings/components/SettingsDnsRecordsTable.tsx
 #: src/modules/settings/admin-panel/components/SettingsAdminWorkspaceContent.tsx
 #: src/modules/settings/accounts/components/SettingsConnectedAccountsTableHeader.tsx
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
 msgid "Status"
 msgstr "Status"
 
@@ -9006,6 +9128,11 @@ msgstr "Detta databasvärde åsidosätter miljöinställningar."
 msgid "This is required to enable manual row reordering."
 msgstr "Detta är nödvändigt för att möjliggöra manuell omordning av rader."
 
+#. js-lingui-id: YI8iNB
+#: src/modules/property-management/pages/PMAccountingPage.tsx
+msgid "This page will surface rent roll, charges, payments, and delinquency workflows across the portfolio."
+msgstr ""
+
 #. js-lingui-id: vbLBMd
 #: src/modules/settings/roles/role-permissions/object-level-permissions/object-form/components/SettingsRolePermissionsObjectLevelObjectFormObjectLevelTableRow.tsx
 msgid "This role can {humanReadableAction} all records"
@@ -9094,6 +9221,11 @@ msgstr "Tidsstämpel och deltagare kommer att delas med ditt team."
 msgid "title"
 msgstr "titel"
 
+#. js-lingui-id: MHrjPM
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Title"
+msgstr ""
+
 #. js-lingui-id: ecUA8p
 #: src/utils/date-utils.ts
 #: src/modules/settings/admin-panel/health-status/constants/WorkerQueueMetricsSelectOptions.ts
@@ -9121,6 +9253,16 @@ msgstr "Växla alla inställningsrättigheter"
 #: src/modules/localization/utils/formatDateISOStringToRelativeDate.ts
 msgid "Tomorrow"
 msgstr "I morgon"
+
+#. js-lingui-id: MQQl9J
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Top-level metrics for each property."
+msgstr ""
+
+#. js-lingui-id: u0+sa3
+#: src/modules/property-management/pages/PMInventoryPage.tsx
+msgid "Track appliances, supplies, and turn readiness across every property. Inventory planning views will land here."
+msgstr ""
 
 #. js-lingui-id: YT/cKI
 #: src/modules/billing/components/SettingsBillingCreditsSection.tsx
@@ -9275,6 +9417,23 @@ msgstr "Unik"
 #: src/modules/workflow/workflow-steps/workflow-actions/components/WorkflowCreateRecordBody.tsx
 msgid "Unique fields"
 msgstr "Unika fält"
+
+#. js-lingui-id: aSwfbR
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Unit"
+msgstr ""
+
+#. js-lingui-id: QrhaVg
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Units"
+msgstr ""
+
+#. js-lingui-id: G3Z6Dv
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Units tied to this property."
+msgstr ""
 
 #. js-lingui-id: Ef7StM
 #: src/pages/settings/emailing-domains/utils/getEmailingDomainStatusText.ts
@@ -9666,6 +9825,11 @@ msgstr "raderades av"
 msgid "was restored by"
 msgstr "återställdes av"
 
+#. js-lingui-id: JM+H1T
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "We could not find this property."
+msgstr ""
+
 #. js-lingui-id: 6eMAkI
 #: src/modules/auth/sign-in-up/components/EmailVerificationSent.tsx
 msgid "We encountered an issue verifying"
@@ -9771,6 +9935,11 @@ msgstr "När nyckeln kommer att inaktiveras"
 #: src/modules/command-menu/pages/page-layout/components/CommandMenuPageLayoutWidgetTypeSelect.tsx
 msgid "Widget type"
 msgstr "Widgettyp"
+
+#. js-lingui-id: SBfnnC
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Work orders"
+msgstr ""
 
 #. js-lingui-id: 3J7l5w
 #: src/pages/settings/admin-panel/SettingsAdminQueueDetail.tsx

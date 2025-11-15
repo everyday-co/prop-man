@@ -467,6 +467,11 @@ msgstr "账户添加成功。同步已开始。"
 msgid "Account Deletion"
 msgstr "删除账户"
 
+#. js-lingui-id: WcvywZ
+#: src/modules/property-management/pages/PMAccountingPage.tsx
+msgid "Accounting"
+msgstr ""
+
 #. js-lingui-id: bPwFdf
 #: src/pages/settings/accounts/SettingsAccountsEmails.tsx
 #: src/pages/settings/accounts/SettingsAccountsCalendars.tsx
@@ -526,6 +531,11 @@ msgstr "激活工作流"
 #: src/modules/settings/admin-panel/health-status/components/SettingsAdminQueueJobsTable.tsx
 msgid "Active"
 msgstr "活跃"
+
+#. js-lingui-id: TICM4L
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Active and upcoming leases for this property."
+msgstr ""
 
 #. js-lingui-id: Mue4oc
 #: src/pages/settings/workspace/SettingsApiWebhooks.tsx
@@ -1997,6 +2007,13 @@ msgstr ""
 msgid "Collapse"
 msgstr "折叠"
 
+#. js-lingui-id: Jpq3gO
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Collected"
+msgstr ""
+
 #. js-lingui-id: Xose0w
 #: src/modules/settings/accounts/components/SettingsAccountsCalendarChannelsGeneral.tsx
 msgid "Color code"
@@ -3103,6 +3120,13 @@ msgstr "已删除记录"
 #: src/modules/settings/two-factor-authentication/components/DeleteTwoFactorAuthenticationMethod.tsx
 msgid "Deleting this method will remove it permanently from your account."
 msgstr "删除此方法将永久从您的账户中移除。"
+
+#. js-lingui-id: 9KjSFX
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Delinquent"
+msgstr ""
 
 #. js-lingui-id: Cko536
 #: src/modules/workflow/workflow-steps/workflow-actions/find-records-action/components/WorkflowFindRecordsSorts.tsx
@@ -4959,6 +4983,11 @@ msgstr "输入设置"
 msgid "Insert a JSON input, then press \"Run\" to test your function."
 msgstr "插入一个 JSON 输入，然后按“运行”测试您的功能。"
 
+#. js-lingui-id: Cz44G9
+#: src/modules/property-management/pages/PMInspectionsPage.tsx
+msgid "Inspections"
+msgstr ""
+
 #. js-lingui-id: 4ZM8/a
 #: src/modules/settings/roles/role-permissions/permission-flags/components/SettingsRolePermissionsSettingsSection.tsx
 msgid "Install and manage applications"
@@ -5079,6 +5108,11 @@ msgstr "无效的验证码。请再试一次。"
 #: src/modules/auth/sign-in-up/hooks/useHandleResetPassword.ts
 msgid "Invalid workspace"
 msgstr "无效的工作空间"
+
+#. js-lingui-id: ZrsGjm
+#: src/modules/property-management/pages/PMInventoryPage.tsx
+msgid "Inventory"
+msgstr ""
 
 #. js-lingui-id: ZR1dJ4
 #: src/modules/ui/navigation/navigation-drawer/components/MultiWorkspaceDropdown/internal/components/WorkspacesForSignUp.tsx
@@ -5402,6 +5436,16 @@ msgstr "布局"
 msgid "Layouts"
 msgstr "布局"
 
+#. js-lingui-id: /MXLJb
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Lease"
+msgstr ""
+
+#. js-lingui-id: 9U+nt4
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Leases"
+msgstr ""
+
 #. js-lingui-id: 8QyoLb
 #: src/modules/settings/accounts/components/SettingsAccountsConnectionForm.tsx
 msgid "Leave blank if you don't need calendar sync."
@@ -5564,6 +5608,11 @@ msgstr "循环"
 #: src/modules/settings/accounts/components/SettingsAccountsConnectionForm.tsx
 msgid "Mail Account"
 msgstr "邮件账户"
+
+#. js-lingui-id: 1KleS+
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Maintenance items tied to this property."
+msgstr ""
 
 #. js-lingui-id: n0FHLv
 #: src/modules/settings/roles/role-permissions/permission-flags/components/SettingsRolePermissionsSettingsSection.tsx
@@ -5825,6 +5874,8 @@ msgid "month"
 msgstr "月"
 
 #. js-lingui-id: HajiZl
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
 #: src/modules/object-record/object-options-dropdown/components/ObjectOptionsDropdownLayoutContent.tsx
 #: src/modules/object-record/object-options-dropdown/components/ObjectOptionsDropdownCustomView.tsx
 #: src/modules/object-record/object-options-dropdown/components/ObjectOptionsDropdownCalendarViewContent.tsx
@@ -5868,6 +5919,11 @@ msgstr "左移"
 #: src/modules/command-menu/pages/page-layout/components/CommandMenuPageLayoutTabSettings.tsx
 msgid "Move right"
 msgstr "右移"
+
+#. js-lingui-id: GVZWYi
+#: src/modules/property-management/pages/PMInspectionsPage.tsx
+msgid "Move-in/out, annual, and custom inspection workflows will be orchestrated from this page."
+msgstr ""
 
 #. js-lingui-id: asWVA5
 #: src/modules/object-record/spreadsheet-import/utils/getSpreadSheetFieldValidationDefinitions.ts
@@ -6357,6 +6413,11 @@ msgstr "未找到付款方式。请更新您的账单明细。"
 msgid "No permissions have been set for individual objects."
 msgstr "尚未为个人对象设置权限。"
 
+#. js-lingui-id: iCcF3g
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "No properties found yet."
+msgstr ""
+
 #. js-lingui-id: ePgApM
 #: src/modules/workflow/workflow-trigger/components/WorkflowEditTriggerManual.tsx
 msgid "No record is required to trigger this workflow"
@@ -6576,6 +6637,13 @@ msgstr "对象和字段权限设置"
 msgid "Objects created by application"
 msgstr "由应用程序创建的对象"
 
+#. js-lingui-id: 1LWGX6
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Occupancy"
+msgstr ""
+
 #. js-lingui-id: BwJKBw
 #: src/modules/settings/admin-panel/health-status/components/SettingsAdminQueueJobsTable.tsx
 msgid "of"
@@ -6715,6 +6783,17 @@ msgstr "在以下中打开"
 #: src/modules/auth/sign-in-up/components/EmailVerificationSent.tsx
 msgid "Open Outlook"
 msgstr "打开Outlook"
+
+#. js-lingui-id: NrpQ/O
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Open work orders"
+msgstr ""
+
+#. js-lingui-id: 8YNYqL
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Open WOs"
+msgstr ""
 
 #. js-lingui-id: OV5wZZ
 #: src/modules/object-metadata/components/NavigationDrawerOpenedSection.tsx
@@ -7056,6 +7135,11 @@ msgstr "复数"
 msgid "Polish"
 msgstr "波兰语"
 
+#. js-lingui-id: GlnsGg
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Portfolio dashboard"
+msgstr ""
+
 #. js-lingui-id: 0nsqwk
 #: src/pages/settings/profile/appearance/components/LocalePicker.tsx
 msgid "Portuguese — Brazil"
@@ -7115,6 +7199,7 @@ msgstr "已优先处理"
 
 #. js-lingui-id: 1hKEom
 #: src/modules/settings/components/SettingsDnsRecordsTable.tsx
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
 msgid "Priority"
 msgstr "优先级"
 
@@ -7151,6 +7236,22 @@ msgstr "个人资料 - 设置"
 #. js-lingui-id: Szskbr
 #: src/modules/settings/security/components/SettingsSecurityEditableProfileFields.tsx
 msgid "Profile Picture"
+msgstr ""
+
+#. js-lingui-id: l/UFPv
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Properties"
+msgstr ""
+
+#. js-lingui-id: 8B+pY5
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Property"
+msgstr ""
+
+#. js-lingui-id: G5r8c8
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Property dashboard"
 msgstr ""
 
 #. js-lingui-id: GVxbU6
@@ -7401,6 +7502,24 @@ msgstr "移除排序？"
 #: src/modules/billing/components/SettingsBillingSubscriptionInfo.tsx
 msgid "Renewal date"
 msgstr "续约日期"
+
+#. js-lingui-id: zb77GC
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Rent"
+msgstr ""
+
+#. js-lingui-id: bAERwb
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Rent roll"
+msgstr ""
+
+#. js-lingui-id: PDaAhy
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Rent roll vs collected trend coming soon."
+msgstr ""
 
 #. js-lingui-id: Ee8JBW
 #: src/modules/workflow/workflow-steps/workflow-actions/form-action/components/WorkflowEditActionFormBuilder.tsx
@@ -8476,6 +8595,9 @@ msgstr "状态"
 #: src/modules/settings/components/SettingsDnsRecordsTable.tsx
 #: src/modules/settings/admin-panel/components/SettingsAdminWorkspaceContent.tsx
 #: src/modules/settings/accounts/components/SettingsConnectedAccountsTableHeader.tsx
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
 msgid "Status"
 msgstr "状态"
 
@@ -8994,6 +9116,11 @@ msgstr "此数据库值会覆盖环境设置。"
 msgid "This is required to enable manual row reordering."
 msgstr "这需要启用手动行重新排序。"
 
+#. js-lingui-id: YI8iNB
+#: src/modules/property-management/pages/PMAccountingPage.tsx
+msgid "This page will surface rent roll, charges, payments, and delinquency workflows across the portfolio."
+msgstr ""
+
 #. js-lingui-id: vbLBMd
 #: src/modules/settings/roles/role-permissions/object-level-permissions/object-form/components/SettingsRolePermissionsObjectLevelObjectFormObjectLevelTableRow.tsx
 msgid "This role can {humanReadableAction} all records"
@@ -9082,6 +9209,11 @@ msgstr "时间戳和参与者将与您的团队分享。"
 msgid "title"
 msgstr "标题"
 
+#. js-lingui-id: MHrjPM
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Title"
+msgstr ""
+
 #. js-lingui-id: ecUA8p
 #: src/utils/date-utils.ts
 #: src/modules/settings/admin-panel/health-status/constants/WorkerQueueMetricsSelectOptions.ts
@@ -9109,6 +9241,16 @@ msgstr "切换所有设置权限"
 #: src/modules/localization/utils/formatDateISOStringToRelativeDate.ts
 msgid "Tomorrow"
 msgstr "明天"
+
+#. js-lingui-id: MQQl9J
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Top-level metrics for each property."
+msgstr ""
+
+#. js-lingui-id: u0+sa3
+#: src/modules/property-management/pages/PMInventoryPage.tsx
+msgid "Track appliances, supplies, and turn readiness across every property. Inventory planning views will land here."
+msgstr ""
 
 #. js-lingui-id: YT/cKI
 #: src/modules/billing/components/SettingsBillingCreditsSection.tsx
@@ -9263,6 +9405,23 @@ msgstr "唯一"
 #: src/modules/workflow/workflow-steps/workflow-actions/components/WorkflowCreateRecordBody.tsx
 msgid "Unique fields"
 msgstr "唯一字段"
+
+#. js-lingui-id: aSwfbR
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Unit"
+msgstr ""
+
+#. js-lingui-id: QrhaVg
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Units"
+msgstr ""
+
+#. js-lingui-id: G3Z6Dv
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Units tied to this property."
+msgstr ""
 
 #. js-lingui-id: Ef7StM
 #: src/pages/settings/emailing-domains/utils/getEmailingDomainStatusText.ts
@@ -9654,6 +9813,11 @@ msgstr "被删除"
 msgid "was restored by"
 msgstr "被恢复"
 
+#. js-lingui-id: JM+H1T
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "We could not find this property."
+msgstr ""
+
 #. js-lingui-id: 6eMAkI
 #: src/modules/auth/sign-in-up/components/EmailVerificationSent.tsx
 msgid "We encountered an issue verifying"
@@ -9759,6 +9923,11 @@ msgstr "密钥何时会被禁用"
 #: src/modules/command-menu/pages/page-layout/components/CommandMenuPageLayoutWidgetTypeSelect.tsx
 msgid "Widget type"
 msgstr "组件类型"
+
+#. js-lingui-id: SBfnnC
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Work orders"
+msgstr ""
 
 #. js-lingui-id: 3J7l5w
 #: src/pages/settings/admin-panel/SettingsAdminQueueDetail.tsx

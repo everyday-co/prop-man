@@ -467,6 +467,11 @@ msgstr "Compte afegit amb èxit. Sincronització iniciada."
 msgid "Account Deletion"
 msgstr "Eliminació de compte"
 
+#. js-lingui-id: WcvywZ
+#: src/modules/property-management/pages/PMAccountingPage.tsx
+msgid "Accounting"
+msgstr ""
+
 #. js-lingui-id: bPwFdf
 #: src/pages/settings/accounts/SettingsAccountsEmails.tsx
 #: src/pages/settings/accounts/SettingsAccountsCalendars.tsx
@@ -526,6 +531,11 @@ msgstr "Activa el flux de treball"
 #: src/modules/settings/admin-panel/health-status/components/SettingsAdminQueueJobsTable.tsx
 msgid "Active"
 msgstr "Actiu"
+
+#. js-lingui-id: TICM4L
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Active and upcoming leases for this property."
+msgstr ""
 
 #. js-lingui-id: Mue4oc
 #: src/pages/settings/workspace/SettingsApiWebhooks.tsx
@@ -1997,6 +2007,13 @@ msgstr "Programar la teva funció"
 msgid "Collapse"
 msgstr "Contraure"
 
+#. js-lingui-id: Jpq3gO
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Collected"
+msgstr ""
+
 #. js-lingui-id: Xose0w
 #: src/modules/settings/accounts/components/SettingsAccountsCalendarChannelsGeneral.tsx
 msgid "Color code"
@@ -3103,6 +3120,13 @@ msgstr "Registres suprimits"
 #: src/modules/settings/two-factor-authentication/components/DeleteTwoFactorAuthenticationMethod.tsx
 msgid "Deleting this method will remove it permanently from your account."
 msgstr "Eliminar aquest mètode el eliminarà permanentment del teu compte."
+
+#. js-lingui-id: 9KjSFX
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Delinquent"
+msgstr ""
 
 #. js-lingui-id: Cko536
 #: src/modules/workflow/workflow-steps/workflow-actions/find-records-action/components/WorkflowFindRecordsSorts.tsx
@@ -4959,6 +4983,11 @@ msgstr "Configuració d'entrada"
 msgid "Insert a JSON input, then press \"Run\" to test your function."
 msgstr "Insereix una entrada JSON, després prem \"Executar\" per provar la teva funció."
 
+#. js-lingui-id: Cz44G9
+#: src/modules/property-management/pages/PMInspectionsPage.tsx
+msgid "Inspections"
+msgstr ""
+
 #. js-lingui-id: 4ZM8/a
 #: src/modules/settings/roles/role-permissions/permission-flags/components/SettingsRolePermissionsSettingsSection.tsx
 msgid "Install and manage applications"
@@ -5079,6 +5108,11 @@ msgstr "Codi de verificació no vàlid. Torna-ho a intentar."
 #: src/modules/auth/sign-in-up/hooks/useHandleResetPassword.ts
 msgid "Invalid workspace"
 msgstr "Espai de treball no vàlid"
+
+#. js-lingui-id: ZrsGjm
+#: src/modules/property-management/pages/PMInventoryPage.tsx
+msgid "Inventory"
+msgstr ""
 
 #. js-lingui-id: ZR1dJ4
 #: src/modules/ui/navigation/navigation-drawer/components/MultiWorkspaceDropdown/internal/components/WorkspacesForSignUp.tsx
@@ -5402,6 +5436,16 @@ msgstr "Disseny"
 msgid "Layouts"
 msgstr "Dissenys"
 
+#. js-lingui-id: /MXLJb
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Lease"
+msgstr ""
+
+#. js-lingui-id: 9U+nt4
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Leases"
+msgstr ""
+
 #. js-lingui-id: 8QyoLb
 #: src/modules/settings/accounts/components/SettingsAccountsConnectionForm.tsx
 msgid "Leave blank if you don't need calendar sync."
@@ -5564,6 +5608,11 @@ msgstr "bucle"
 #: src/modules/settings/accounts/components/SettingsAccountsConnectionForm.tsx
 msgid "Mail Account"
 msgstr "Compte de correu"
+
+#. js-lingui-id: 1KleS+
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Maintenance items tied to this property."
+msgstr ""
 
 #. js-lingui-id: n0FHLv
 #: src/modules/settings/roles/role-permissions/permission-flags/components/SettingsRolePermissionsSettingsSection.tsx
@@ -5825,6 +5874,8 @@ msgid "month"
 msgstr "mes"
 
 #. js-lingui-id: HajiZl
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
 #: src/modules/object-record/object-options-dropdown/components/ObjectOptionsDropdownLayoutContent.tsx
 #: src/modules/object-record/object-options-dropdown/components/ObjectOptionsDropdownCustomView.tsx
 #: src/modules/object-record/object-options-dropdown/components/ObjectOptionsDropdownCalendarViewContent.tsx
@@ -5868,6 +5919,11 @@ msgstr "Moure a l'esquerra"
 #: src/modules/command-menu/pages/page-layout/components/CommandMenuPageLayoutTabSettings.tsx
 msgid "Move right"
 msgstr "Moure a la dreta"
+
+#. js-lingui-id: GVZWYi
+#: src/modules/property-management/pages/PMInspectionsPage.tsx
+msgid "Move-in/out, annual, and custom inspection workflows will be orchestrated from this page."
+msgstr ""
 
 #. js-lingui-id: asWVA5
 #: src/modules/object-record/spreadsheet-import/utils/getSpreadSheetFieldValidationDefinitions.ts
@@ -6357,6 +6413,11 @@ msgstr "No s'ha trobat cap mètode de pagament. Si us plau actualitzi les seves 
 msgid "No permissions have been set for individual objects."
 msgstr "No s'han establert permisos per a objectes individuals."
 
+#. js-lingui-id: iCcF3g
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "No properties found yet."
+msgstr ""
+
 #. js-lingui-id: ePgApM
 #: src/modules/workflow/workflow-trigger/components/WorkflowEditTriggerManual.tsx
 msgid "No record is required to trigger this workflow"
@@ -6576,6 +6637,13 @@ msgstr "Configuració de permisos d'objectes i camps"
 msgid "Objects created by application"
 msgstr "Objectes creats per aplicació"
 
+#. js-lingui-id: 1LWGX6
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Occupancy"
+msgstr ""
+
 #. js-lingui-id: BwJKBw
 #: src/modules/settings/admin-panel/health-status/components/SettingsAdminQueueJobsTable.tsx
 msgid "of"
@@ -6715,6 +6783,17 @@ msgstr "Obrir en"
 #: src/modules/auth/sign-in-up/components/EmailVerificationSent.tsx
 msgid "Open Outlook"
 msgstr "Obrir en Outlook"
+
+#. js-lingui-id: NrpQ/O
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Open work orders"
+msgstr ""
+
+#. js-lingui-id: 8YNYqL
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Open WOs"
+msgstr ""
 
 #. js-lingui-id: OV5wZZ
 #: src/modules/object-metadata/components/NavigationDrawerOpenedSection.tsx
@@ -7056,6 +7135,11 @@ msgstr "Plural"
 msgid "Polish"
 msgstr "Polonès"
 
+#. js-lingui-id: GlnsGg
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Portfolio dashboard"
+msgstr ""
+
 #. js-lingui-id: 0nsqwk
 #: src/pages/settings/profile/appearance/components/LocalePicker.tsx
 msgid "Portuguese — Brazil"
@@ -7115,6 +7199,7 @@ msgstr "Prioritzat"
 
 #. js-lingui-id: 1hKEom
 #: src/modules/settings/components/SettingsDnsRecordsTable.tsx
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
 msgid "Priority"
 msgstr "Prioritat"
 
@@ -7151,6 +7236,22 @@ msgstr "Perfil - Configuració"
 #. js-lingui-id: Szskbr
 #: src/modules/settings/security/components/SettingsSecurityEditableProfileFields.tsx
 msgid "Profile Picture"
+msgstr ""
+
+#. js-lingui-id: l/UFPv
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Properties"
+msgstr ""
+
+#. js-lingui-id: 8B+pY5
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Property"
+msgstr ""
+
+#. js-lingui-id: G5r8c8
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Property dashboard"
 msgstr ""
 
 #. js-lingui-id: GVxbU6
@@ -7401,6 +7502,24 @@ msgstr "Elimina ordenació?"
 #: src/modules/billing/components/SettingsBillingSubscriptionInfo.tsx
 msgid "Renewal date"
 msgstr "Data de renovació"
+
+#. js-lingui-id: zb77GC
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Rent"
+msgstr ""
+
+#. js-lingui-id: bAERwb
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Rent roll"
+msgstr ""
+
+#. js-lingui-id: PDaAhy
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Rent roll vs collected trend coming soon."
+msgstr ""
 
 #. js-lingui-id: Ee8JBW
 #: src/modules/workflow/workflow-steps/workflow-actions/form-action/components/WorkflowEditActionFormBuilder.tsx
@@ -8476,6 +8595,9 @@ msgstr "Estat"
 #: src/modules/settings/components/SettingsDnsRecordsTable.tsx
 #: src/modules/settings/admin-panel/components/SettingsAdminWorkspaceContent.tsx
 #: src/modules/settings/accounts/components/SettingsConnectedAccountsTableHeader.tsx
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
 msgid "Status"
 msgstr "Estat"
 
@@ -8994,6 +9116,11 @@ msgstr "Aquest valor de la base de dades supera la configuració de l'entorn."
 msgid "This is required to enable manual row reordering."
 msgstr "Això és necessari per permetre la reordenació manual de les files."
 
+#. js-lingui-id: YI8iNB
+#: src/modules/property-management/pages/PMAccountingPage.tsx
+msgid "This page will surface rent roll, charges, payments, and delinquency workflows across the portfolio."
+msgstr ""
+
 #. js-lingui-id: vbLBMd
 #: src/modules/settings/roles/role-permissions/object-level-permissions/object-form/components/SettingsRolePermissionsObjectLevelObjectFormObjectLevelTableRow.tsx
 msgid "This role can {humanReadableAction} all records"
@@ -9082,6 +9209,11 @@ msgstr "La marca de temps i els participants seran compartits amb el teu equip."
 msgid "title"
 msgstr "títol"
 
+#. js-lingui-id: MHrjPM
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Title"
+msgstr ""
+
 #. js-lingui-id: ecUA8p
 #: src/utils/date-utils.ts
 #: src/modules/settings/admin-panel/health-status/constants/WorkerQueueMetricsSelectOptions.ts
@@ -9109,6 +9241,16 @@ msgstr "Alternar tots els permisos de configuració"
 #: src/modules/localization/utils/formatDateISOStringToRelativeDate.ts
 msgid "Tomorrow"
 msgstr "Demà"
+
+#. js-lingui-id: MQQl9J
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Top-level metrics for each property."
+msgstr ""
+
+#. js-lingui-id: u0+sa3
+#: src/modules/property-management/pages/PMInventoryPage.tsx
+msgid "Track appliances, supplies, and turn readiness across every property. Inventory planning views will land here."
+msgstr ""
 
 #. js-lingui-id: YT/cKI
 #: src/modules/billing/components/SettingsBillingCreditsSection.tsx
@@ -9263,6 +9405,23 @@ msgstr "\\'Únic\\'"
 #: src/modules/workflow/workflow-steps/workflow-actions/components/WorkflowCreateRecordBody.tsx
 msgid "Unique fields"
 msgstr "Camps únics"
+
+#. js-lingui-id: aSwfbR
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Unit"
+msgstr ""
+
+#. js-lingui-id: QrhaVg
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Units"
+msgstr ""
+
+#. js-lingui-id: G3Z6Dv
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Units tied to this property."
+msgstr ""
 
 #. js-lingui-id: Ef7StM
 #: src/pages/settings/emailing-domains/utils/getEmailingDomainStatusText.ts
@@ -9654,6 +9813,11 @@ msgstr "va ser eliminat per"
 msgid "was restored by"
 msgstr "va ser restaurat per"
 
+#. js-lingui-id: JM+H1T
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "We could not find this property."
+msgstr ""
+
 #. js-lingui-id: 6eMAkI
 #: src/modules/auth/sign-in-up/components/EmailVerificationSent.tsx
 msgid "We encountered an issue verifying"
@@ -9759,6 +9923,11 @@ msgstr "Quan serà desactivada la clau"
 #: src/modules/command-menu/pages/page-layout/components/CommandMenuPageLayoutWidgetTypeSelect.tsx
 msgid "Widget type"
 msgstr "Tipus de widget"
+
+#. js-lingui-id: SBfnnC
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Work orders"
+msgstr ""
 
 #. js-lingui-id: 3J7l5w
 #: src/pages/settings/admin-panel/SettingsAdminQueueDetail.tsx

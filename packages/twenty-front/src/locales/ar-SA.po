@@ -467,6 +467,11 @@ msgstr "تمت إضافة الحساب بنجاح. بدأ التزامن."
 msgid "Account Deletion"
 msgstr "حذف الحساب"
 
+#. js-lingui-id: WcvywZ
+#: src/modules/property-management/pages/PMAccountingPage.tsx
+msgid "Accounting"
+msgstr ""
+
 #. js-lingui-id: bPwFdf
 #: src/pages/settings/accounts/SettingsAccountsEmails.tsx
 #: src/pages/settings/accounts/SettingsAccountsCalendars.tsx
@@ -526,6 +531,11 @@ msgstr "تفعيل سير العمل"
 #: src/modules/settings/admin-panel/health-status/components/SettingsAdminQueueJobsTable.tsx
 msgid "Active"
 msgstr "نشط"
+
+#. js-lingui-id: TICM4L
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Active and upcoming leases for this property."
+msgstr ""
 
 #. js-lingui-id: Mue4oc
 #: src/pages/settings/workspace/SettingsApiWebhooks.tsx
@@ -1997,6 +2007,13 @@ msgstr "برمج الوظيفة الخاصة بك"
 msgid "Collapse"
 msgstr "طي"
 
+#. js-lingui-id: Jpq3gO
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Collected"
+msgstr ""
+
 #. js-lingui-id: Xose0w
 #: src/modules/settings/accounts/components/SettingsAccountsCalendarChannelsGeneral.tsx
 msgid "Color code"
@@ -3103,6 +3120,13 @@ msgstr "السجلات المحذوفة"
 #: src/modules/settings/two-factor-authentication/components/DeleteTwoFactorAuthenticationMethod.tsx
 msgid "Deleting this method will remove it permanently from your account."
 msgstr "سيؤدي حذف هذه الطريقة إلى إزالتها نهائيًا من حسابك."
+
+#. js-lingui-id: 9KjSFX
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Delinquent"
+msgstr ""
 
 #. js-lingui-id: Cko536
 #: src/modules/workflow/workflow-steps/workflow-actions/find-records-action/components/WorkflowFindRecordsSorts.tsx
@@ -4959,6 +4983,11 @@ msgstr "إعدادات الإدخال"
 msgid "Insert a JSON input, then press \"Run\" to test your function."
 msgstr "أدخل إدخال JSON ، ثم اضغط على \"تشغيل\" لاختبار الوظيفة."
 
+#. js-lingui-id: Cz44G9
+#: src/modules/property-management/pages/PMInspectionsPage.tsx
+msgid "Inspections"
+msgstr ""
+
 #. js-lingui-id: 4ZM8/a
 #: src/modules/settings/roles/role-permissions/permission-flags/components/SettingsRolePermissionsSettingsSection.tsx
 msgid "Install and manage applications"
@@ -5079,6 +5108,11 @@ msgstr "رمز التحقق غير صالح. الرجاء المحاولة مر�
 #: src/modules/auth/sign-in-up/hooks/useHandleResetPassword.ts
 msgid "Invalid workspace"
 msgstr "مساحة العمل غير صالحة"
+
+#. js-lingui-id: ZrsGjm
+#: src/modules/property-management/pages/PMInventoryPage.tsx
+msgid "Inventory"
+msgstr ""
 
 #. js-lingui-id: ZR1dJ4
 #: src/modules/ui/navigation/navigation-drawer/components/MultiWorkspaceDropdown/internal/components/WorkspacesForSignUp.tsx
@@ -5402,6 +5436,16 @@ msgstr "التخطيط"
 msgid "Layouts"
 msgstr "تخطيطات"
 
+#. js-lingui-id: /MXLJb
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Lease"
+msgstr ""
+
+#. js-lingui-id: 9U+nt4
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Leases"
+msgstr ""
+
 #. js-lingui-id: 8QyoLb
 #: src/modules/settings/accounts/components/SettingsAccountsConnectionForm.tsx
 msgid "Leave blank if you don't need calendar sync."
@@ -5564,6 +5608,11 @@ msgstr "حلقة"
 #: src/modules/settings/accounts/components/SettingsAccountsConnectionForm.tsx
 msgid "Mail Account"
 msgstr "حساب البريد"
+
+#. js-lingui-id: 1KleS+
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Maintenance items tied to this property."
+msgstr ""
 
 #. js-lingui-id: n0FHLv
 #: src/modules/settings/roles/role-permissions/permission-flags/components/SettingsRolePermissionsSettingsSection.tsx
@@ -5825,6 +5874,8 @@ msgid "month"
 msgstr "شهر"
 
 #. js-lingui-id: HajiZl
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
 #: src/modules/object-record/object-options-dropdown/components/ObjectOptionsDropdownLayoutContent.tsx
 #: src/modules/object-record/object-options-dropdown/components/ObjectOptionsDropdownCustomView.tsx
 #: src/modules/object-record/object-options-dropdown/components/ObjectOptionsDropdownCalendarViewContent.tsx
@@ -5868,6 +5919,11 @@ msgstr "نقل إلى اليسار"
 #: src/modules/command-menu/pages/page-layout/components/CommandMenuPageLayoutTabSettings.tsx
 msgid "Move right"
 msgstr "نقل إلى اليمين"
+
+#. js-lingui-id: GVZWYi
+#: src/modules/property-management/pages/PMInspectionsPage.tsx
+msgid "Move-in/out, annual, and custom inspection workflows will be orchestrated from this page."
+msgstr ""
 
 #. js-lingui-id: asWVA5
 #: src/modules/object-record/spreadsheet-import/utils/getSpreadSheetFieldValidationDefinitions.ts
@@ -6357,6 +6413,11 @@ msgstr "لم يتم العثور على وسيلة دفع. يرجى تحديث �
 msgid "No permissions have been set for individual objects."
 msgstr "لم يتم تعيين أي أذونات للعناصر الفردية."
 
+#. js-lingui-id: iCcF3g
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "No properties found yet."
+msgstr ""
+
 #. js-lingui-id: ePgApM
 #: src/modules/workflow/workflow-trigger/components/WorkflowEditTriggerManual.tsx
 msgid "No record is required to trigger this workflow"
@@ -6576,6 +6637,13 @@ msgstr "إعدادات أذونات الكائنات والحقول"
 msgid "Objects created by application"
 msgstr "الكائنات التي أنشأها التطبيق"
 
+#. js-lingui-id: 1LWGX6
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Occupancy"
+msgstr ""
+
 #. js-lingui-id: BwJKBw
 #: src/modules/settings/admin-panel/health-status/components/SettingsAdminQueueJobsTable.tsx
 msgid "of"
@@ -6715,6 +6783,17 @@ msgstr "فتح في"
 #: src/modules/auth/sign-in-up/components/EmailVerificationSent.tsx
 msgid "Open Outlook"
 msgstr "فتح Outlook"
+
+#. js-lingui-id: NrpQ/O
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Open work orders"
+msgstr ""
+
+#. js-lingui-id: 8YNYqL
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Open WOs"
+msgstr ""
 
 #. js-lingui-id: OV5wZZ
 #: src/modules/object-metadata/components/NavigationDrawerOpenedSection.tsx
@@ -7056,6 +7135,11 @@ msgstr "جمع"
 msgid "Polish"
 msgstr "البولندية"
 
+#. js-lingui-id: GlnsGg
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Portfolio dashboard"
+msgstr ""
+
 #. js-lingui-id: 0nsqwk
 #: src/pages/settings/profile/appearance/components/LocalePicker.tsx
 msgid "Portuguese — Brazil"
@@ -7115,6 +7199,7 @@ msgstr "ذات أولوية"
 
 #. js-lingui-id: 1hKEom
 #: src/modules/settings/components/SettingsDnsRecordsTable.tsx
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
 msgid "Priority"
 msgstr "الأولوية"
 
@@ -7151,6 +7236,22 @@ msgstr "الملف الشخصي - إعدادات"
 #. js-lingui-id: Szskbr
 #: src/modules/settings/security/components/SettingsSecurityEditableProfileFields.tsx
 msgid "Profile Picture"
+msgstr ""
+
+#. js-lingui-id: l/UFPv
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Properties"
+msgstr ""
+
+#. js-lingui-id: 8B+pY5
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Property"
+msgstr ""
+
+#. js-lingui-id: G5r8c8
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Property dashboard"
 msgstr ""
 
 #. js-lingui-id: GVxbU6
@@ -7401,6 +7502,24 @@ msgstr "إزالة الترتيب؟"
 #: src/modules/billing/components/SettingsBillingSubscriptionInfo.tsx
 msgid "Renewal date"
 msgstr "تاريخ التجديد"
+
+#. js-lingui-id: zb77GC
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Rent"
+msgstr ""
+
+#. js-lingui-id: bAERwb
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Rent roll"
+msgstr ""
+
+#. js-lingui-id: PDaAhy
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Rent roll vs collected trend coming soon."
+msgstr ""
 
 #. js-lingui-id: Ee8JBW
 #: src/modules/workflow/workflow-steps/workflow-actions/form-action/components/WorkflowEditActionFormBuilder.tsx
@@ -8476,6 +8595,9 @@ msgstr "الولاية"
 #: src/modules/settings/components/SettingsDnsRecordsTable.tsx
 #: src/modules/settings/admin-panel/components/SettingsAdminWorkspaceContent.tsx
 #: src/modules/settings/accounts/components/SettingsConnectedAccountsTableHeader.tsx
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
 msgid "Status"
 msgstr "الحالة"
 
@@ -8994,6 +9116,11 @@ msgstr "هذه القيمة في قاعدة البيانات تتخطى إعدا
 msgid "This is required to enable manual row reordering."
 msgstr "هذا مطلوب لتمكين إعادة ترتيب الصف يدويًا."
 
+#. js-lingui-id: YI8iNB
+#: src/modules/property-management/pages/PMAccountingPage.tsx
+msgid "This page will surface rent roll, charges, payments, and delinquency workflows across the portfolio."
+msgstr ""
+
 #. js-lingui-id: vbLBMd
 #: src/modules/settings/roles/role-permissions/object-level-permissions/object-form/components/SettingsRolePermissionsObjectLevelObjectFormObjectLevelTableRow.tsx
 msgid "This role can {humanReadableAction} all records"
@@ -9082,6 +9209,11 @@ msgstr "سيتم مشاركة الطابع الزمني والمشاركين م�
 msgid "title"
 msgstr "العنوان"
 
+#. js-lingui-id: MHrjPM
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Title"
+msgstr ""
+
 #. js-lingui-id: ecUA8p
 #: src/utils/date-utils.ts
 #: src/modules/settings/admin-panel/health-status/constants/WorkerQueueMetricsSelectOptions.ts
@@ -9109,6 +9241,16 @@ msgstr "تبديل جميع أذونات الإعدادات"
 #: src/modules/localization/utils/formatDateISOStringToRelativeDate.ts
 msgid "Tomorrow"
 msgstr "غدًا"
+
+#. js-lingui-id: MQQl9J
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Top-level metrics for each property."
+msgstr ""
+
+#. js-lingui-id: u0+sa3
+#: src/modules/property-management/pages/PMInventoryPage.tsx
+msgid "Track appliances, supplies, and turn readiness across every property. Inventory planning views will land here."
+msgstr ""
 
 #. js-lingui-id: YT/cKI
 #: src/modules/billing/components/SettingsBillingCreditsSection.tsx
@@ -9263,6 +9405,23 @@ msgstr "فريد"
 #: src/modules/workflow/workflow-steps/workflow-actions/components/WorkflowCreateRecordBody.tsx
 msgid "Unique fields"
 msgstr "الحقول الفريدة"
+
+#. js-lingui-id: aSwfbR
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Unit"
+msgstr ""
+
+#. js-lingui-id: QrhaVg
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Units"
+msgstr ""
+
+#. js-lingui-id: G3Z6Dv
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Units tied to this property."
+msgstr ""
 
 #. js-lingui-id: Ef7StM
 #: src/pages/settings/emailing-domains/utils/getEmailingDomainStatusText.ts
@@ -9654,6 +9813,11 @@ msgstr "تم الحذف بواسطة"
 msgid "was restored by"
 msgstr "تم الاسترجاع بواسطة"
 
+#. js-lingui-id: JM+H1T
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "We could not find this property."
+msgstr ""
+
 #. js-lingui-id: 6eMAkI
 #: src/modules/auth/sign-in-up/components/EmailVerificationSent.tsx
 msgid "We encountered an issue verifying"
@@ -9759,6 +9923,11 @@ msgstr "حين سيتم تعطيل المفتاح"
 #: src/modules/command-menu/pages/page-layout/components/CommandMenuPageLayoutWidgetTypeSelect.tsx
 msgid "Widget type"
 msgstr "نوع الأداة"
+
+#. js-lingui-id: SBfnnC
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Work orders"
+msgstr ""
 
 #. js-lingui-id: 3J7l5w
 #: src/pages/settings/admin-panel/SettingsAdminQueueDetail.tsx

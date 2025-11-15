@@ -462,6 +462,11 @@ msgstr "Account added successfully. Sync started."
 msgid "Account Deletion"
 msgstr "Account Deletion"
 
+#. js-lingui-id: WcvywZ
+#: src/modules/property-management/pages/PMAccountingPage.tsx
+msgid "Accounting"
+msgstr "Accounting"
+
 #. js-lingui-id: bPwFdf
 #: src/pages/settings/accounts/SettingsAccountsEmails.tsx
 #: src/pages/settings/accounts/SettingsAccountsCalendars.tsx
@@ -521,6 +526,11 @@ msgstr "Activate Workflow"
 #: src/modules/settings/admin-panel/health-status/components/SettingsAdminQueueJobsTable.tsx
 msgid "Active"
 msgstr "Active"
+
+#. js-lingui-id: TICM4L
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Active and upcoming leases for this property."
+msgstr "Active and upcoming leases for this property."
 
 #. js-lingui-id: Mue4oc
 #: src/pages/settings/workspace/SettingsApiWebhooks.tsx
@@ -1992,6 +2002,13 @@ msgstr "Code your function"
 msgid "Collapse"
 msgstr "Collapse"
 
+#. js-lingui-id: Jpq3gO
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Collected"
+msgstr "Collected"
+
 #. js-lingui-id: Xose0w
 #: src/modules/settings/accounts/components/SettingsAccountsCalendarChannelsGeneral.tsx
 msgid "Color code"
@@ -3098,6 +3115,13 @@ msgstr "Deleted records"
 #: src/modules/settings/two-factor-authentication/components/DeleteTwoFactorAuthenticationMethod.tsx
 msgid "Deleting this method will remove it permanently from your account."
 msgstr "Deleting this method will remove it permanently from your account."
+
+#. js-lingui-id: 9KjSFX
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Delinquent"
+msgstr "Delinquent"
 
 #. js-lingui-id: Cko536
 #: src/modules/workflow/workflow-steps/workflow-actions/find-records-action/components/WorkflowFindRecordsSorts.tsx
@@ -4954,6 +4978,11 @@ msgstr "Input settings"
 msgid "Insert a JSON input, then press \"Run\" to test your function."
 msgstr "Insert a JSON input, then press \"Run\" to test your function."
 
+#. js-lingui-id: Cz44G9
+#: src/modules/property-management/pages/PMInspectionsPage.tsx
+msgid "Inspections"
+msgstr "Inspections"
+
 #. js-lingui-id: 4ZM8/a
 #: src/modules/settings/roles/role-permissions/permission-flags/components/SettingsRolePermissionsSettingsSection.tsx
 msgid "Install and manage applications"
@@ -5074,6 +5103,11 @@ msgstr "Invalid verification code. Please try again."
 #: src/modules/auth/sign-in-up/hooks/useHandleResetPassword.ts
 msgid "Invalid workspace"
 msgstr "Invalid workspace"
+
+#. js-lingui-id: ZrsGjm
+#: src/modules/property-management/pages/PMInventoryPage.tsx
+msgid "Inventory"
+msgstr "Inventory"
 
 #. js-lingui-id: ZR1dJ4
 #: src/modules/ui/navigation/navigation-drawer/components/MultiWorkspaceDropdown/internal/components/WorkspacesForSignUp.tsx
@@ -5397,6 +5431,16 @@ msgstr "Layout"
 msgid "Layouts"
 msgstr "Layouts"
 
+#. js-lingui-id: /MXLJb
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Lease"
+msgstr "Lease"
+
+#. js-lingui-id: 9U+nt4
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Leases"
+msgstr "Leases"
+
 #. js-lingui-id: 8QyoLb
 #: src/modules/settings/accounts/components/SettingsAccountsConnectionForm.tsx
 msgid "Leave blank if you don't need calendar sync."
@@ -5559,6 +5603,11 @@ msgstr "loop"
 #: src/modules/settings/accounts/components/SettingsAccountsConnectionForm.tsx
 msgid "Mail Account"
 msgstr "Mail Account"
+
+#. js-lingui-id: 1KleS+
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Maintenance items tied to this property."
+msgstr "Maintenance items tied to this property."
 
 #. js-lingui-id: n0FHLv
 #: src/modules/settings/roles/role-permissions/permission-flags/components/SettingsRolePermissionsSettingsSection.tsx
@@ -5820,6 +5869,8 @@ msgid "month"
 msgstr "month"
 
 #. js-lingui-id: HajiZl
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
 #: src/modules/object-record/object-options-dropdown/components/ObjectOptionsDropdownLayoutContent.tsx
 #: src/modules/object-record/object-options-dropdown/components/ObjectOptionsDropdownCustomView.tsx
 #: src/modules/object-record/object-options-dropdown/components/ObjectOptionsDropdownCalendarViewContent.tsx
@@ -5863,6 +5914,11 @@ msgstr "Move left"
 #: src/modules/command-menu/pages/page-layout/components/CommandMenuPageLayoutTabSettings.tsx
 msgid "Move right"
 msgstr "Move right"
+
+#. js-lingui-id: GVZWYi
+#: src/modules/property-management/pages/PMInspectionsPage.tsx
+msgid "Move-in/out, annual, and custom inspection workflows will be orchestrated from this page."
+msgstr "Move-in/out, annual, and custom inspection workflows will be orchestrated from this page."
 
 #. js-lingui-id: asWVA5
 #: src/modules/object-record/spreadsheet-import/utils/getSpreadSheetFieldValidationDefinitions.ts
@@ -6352,6 +6408,11 @@ msgstr "No payment method found. Please update your billing details."
 msgid "No permissions have been set for individual objects."
 msgstr "No permissions have been set for individual objects."
 
+#. js-lingui-id: iCcF3g
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "No properties found yet."
+msgstr "No properties found yet."
+
 #. js-lingui-id: ePgApM
 #: src/modules/workflow/workflow-trigger/components/WorkflowEditTriggerManual.tsx
 msgid "No record is required to trigger this workflow"
@@ -6571,6 +6632,13 @@ msgstr "Objects and fields permissions settings"
 msgid "Objects created by application"
 msgstr "Objects created by application"
 
+#. js-lingui-id: 1LWGX6
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Occupancy"
+msgstr "Occupancy"
+
 #. js-lingui-id: BwJKBw
 #: src/modules/settings/admin-panel/health-status/components/SettingsAdminQueueJobsTable.tsx
 msgid "of"
@@ -6710,6 +6778,17 @@ msgstr "Open in"
 #: src/modules/auth/sign-in-up/components/EmailVerificationSent.tsx
 msgid "Open Outlook"
 msgstr "Open Outlook"
+
+#. js-lingui-id: NrpQ/O
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Open work orders"
+msgstr "Open work orders"
+
+#. js-lingui-id: 8YNYqL
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Open WOs"
+msgstr "Open WOs"
 
 #. js-lingui-id: OV5wZZ
 #: src/modules/object-metadata/components/NavigationDrawerOpenedSection.tsx
@@ -7051,6 +7130,11 @@ msgstr "Plural"
 msgid "Polish"
 msgstr "Polish"
 
+#. js-lingui-id: GlnsGg
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Portfolio dashboard"
+msgstr "Portfolio dashboard"
+
 #. js-lingui-id: 0nsqwk
 #: src/pages/settings/profile/appearance/components/LocalePicker.tsx
 msgid "Portuguese — Brazil"
@@ -7110,6 +7194,7 @@ msgstr "Prioritized"
 
 #. js-lingui-id: 1hKEom
 #: src/modules/settings/components/SettingsDnsRecordsTable.tsx
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
 msgid "Priority"
 msgstr "Priority"
 
@@ -7147,6 +7232,22 @@ msgstr "Profile - Settings"
 #: src/modules/settings/security/components/SettingsSecurityEditableProfileFields.tsx
 msgid "Profile Picture"
 msgstr "Profile Picture"
+
+#. js-lingui-id: l/UFPv
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Properties"
+msgstr "Properties"
+
+#. js-lingui-id: 8B+pY5
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Property"
+msgstr "Property"
+
+#. js-lingui-id: G5r8c8
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Property dashboard"
+msgstr "Property dashboard"
 
 #. js-lingui-id: GVxbU6
 #: src/modules/settings/security/components/SSO/SettingsSSOOIDCForm.tsx
@@ -7396,6 +7497,24 @@ msgstr "Remove sorting?"
 #: src/modules/billing/components/SettingsBillingSubscriptionInfo.tsx
 msgid "Renewal date"
 msgstr "Renewal date"
+
+#. js-lingui-id: zb77GC
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Rent"
+msgstr "Rent"
+
+#. js-lingui-id: bAERwb
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Rent roll"
+msgstr "Rent roll"
+
+#. js-lingui-id: PDaAhy
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Rent roll vs collected trend coming soon."
+msgstr "Rent roll vs collected trend coming soon."
 
 #. js-lingui-id: Ee8JBW
 #: src/modules/workflow/workflow-steps/workflow-actions/form-action/components/WorkflowEditActionFormBuilder.tsx
@@ -8471,6 +8590,9 @@ msgstr "State"
 #: src/modules/settings/components/SettingsDnsRecordsTable.tsx
 #: src/modules/settings/admin-panel/components/SettingsAdminWorkspaceContent.tsx
 #: src/modules/settings/accounts/components/SettingsConnectedAccountsTableHeader.tsx
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
 msgid "Status"
 msgstr "Status"
 
@@ -8991,6 +9113,11 @@ msgstr "This database value overrides environment settings. "
 msgid "This is required to enable manual row reordering."
 msgstr "This is required to enable manual row reordering."
 
+#. js-lingui-id: YI8iNB
+#: src/modules/property-management/pages/PMAccountingPage.tsx
+msgid "This page will surface rent roll, charges, payments, and delinquency workflows across the portfolio."
+msgstr "This page will surface rent roll, charges, payments, and delinquency workflows across the portfolio."
+
 #. js-lingui-id: vbLBMd
 #: src/modules/settings/roles/role-permissions/object-level-permissions/object-form/components/SettingsRolePermissionsObjectLevelObjectFormObjectLevelTableRow.tsx
 msgid "This role can {humanReadableAction} all records"
@@ -9079,6 +9206,11 @@ msgstr "Timestamp and participants will be shared with your team."
 msgid "title"
 msgstr "title"
 
+#. js-lingui-id: MHrjPM
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Title"
+msgstr "Title"
+
 #. js-lingui-id: ecUA8p
 #: src/utils/date-utils.ts
 #: src/modules/settings/admin-panel/health-status/constants/WorkerQueueMetricsSelectOptions.ts
@@ -9106,6 +9238,16 @@ msgstr "Toggle all settings permissions"
 #: src/modules/localization/utils/formatDateISOStringToRelativeDate.ts
 msgid "Tomorrow"
 msgstr "Tomorrow"
+
+#. js-lingui-id: MQQl9J
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Top-level metrics for each property."
+msgstr "Top-level metrics for each property."
+
+#. js-lingui-id: u0+sa3
+#: src/modules/property-management/pages/PMInventoryPage.tsx
+msgid "Track appliances, supplies, and turn readiness across every property. Inventory planning views will land here."
+msgstr "Track appliances, supplies, and turn readiness across every property. Inventory planning views will land here."
 
 #. js-lingui-id: YT/cKI
 #: src/modules/billing/components/SettingsBillingCreditsSection.tsx
@@ -9260,6 +9402,23 @@ msgstr "Unique"
 #: src/modules/workflow/workflow-steps/workflow-actions/components/WorkflowCreateRecordBody.tsx
 msgid "Unique fields"
 msgstr "Unique fields"
+
+#. js-lingui-id: aSwfbR
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Unit"
+msgstr "Unit"
+
+#. js-lingui-id: QrhaVg
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+#: src/modules/property-management/pages/PortfolioDashboardPage.tsx
+msgid "Units"
+msgstr "Units"
+
+#. js-lingui-id: G3Z6Dv
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Units tied to this property."
+msgstr "Units tied to this property."
 
 #. js-lingui-id: Ef7StM
 #: src/pages/settings/emailing-domains/utils/getEmailingDomainStatusText.ts
@@ -9651,6 +9810,11 @@ msgstr "was deleted by"
 msgid "was restored by"
 msgstr "was restored by"
 
+#. js-lingui-id: JM+H1T
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "We could not find this property."
+msgstr "We could not find this property."
+
 #. js-lingui-id: 6eMAkI
 #: src/modules/auth/sign-in-up/components/EmailVerificationSent.tsx
 msgid "We encountered an issue verifying"
@@ -9756,6 +9920,11 @@ msgstr "When the key will be disabled"
 #: src/modules/command-menu/pages/page-layout/components/CommandMenuPageLayoutWidgetTypeSelect.tsx
 msgid "Widget type"
 msgstr "Widget type"
+
+#. js-lingui-id: SBfnnC
+#: src/modules/property-management/pages/PropertyDashboardPage.tsx
+msgid "Work orders"
+msgstr "Work orders"
 
 #. js-lingui-id: 3J7l5w
 #: src/pages/settings/admin-panel/SettingsAdminQueueDetail.tsx
