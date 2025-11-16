@@ -1082,6 +1082,14 @@ export type DeletedWorkspaceMember = {
   userWorkspaceId?: Maybe<Scalars['UUID']>;
 };
 
+export type DelinquencyReportType = {
+  __typename?: 'DelinquencyReportType';
+  affectedProperties: Scalars['Int'];
+  affectedTenants: Scalars['Int'];
+  delinquentCharges: Array<Scalars['JSON']>;
+  totalOverdue: Scalars['Float'];
+};
+
 export type DestroyViewFieldInput = {
   /** The id of the view field to destroy. */
   id: Scalars['UUID'];
@@ -1607,6 +1615,14 @@ export enum JobState {
   WAITING = 'WAITING',
   WAITING_CHILDREN = 'WAITING_CHILDREN'
 }
+
+export type LeasePaymentHistoryType = {
+  __typename?: 'LeasePaymentHistoryType';
+  charges: Array<Scalars['JSON']>;
+  currentBalance: Scalars['Float'];
+  totalCharged: Scalars['Float'];
+  totalPaid: Scalars['Float'];
+};
 
 export type LineChartConfiguration = {
   __typename?: 'LineChartConfiguration';
@@ -3077,6 +3093,8 @@ export type Query = {
   checkWorkspaceInviteHashIsValid: WorkspaceInviteHashValidOutput;
   currentUser: User;
   currentWorkspace: Workspace;
+  /** Get delinquency report showing all overdue charges */
+  delinquencyReport: DelinquencyReportType;
   field: Field;
   fields: FieldConnection;
   findManyApplications: Array<Application>;
@@ -3136,11 +3154,15 @@ export type Query = {
   getTimelineThreadsFromPersonId: TimelineThreadsWithTotal;
   index: Index;
   indexMetadatas: IndexConnection;
+  /** Get complete payment history for a specific lease */
+  leasePaymentHistory: LeasePaymentHistoryType;
   listPlans: Array<BillingPlanOutput>;
   object: Object;
   objects: ObjectConnection;
   portfolioSummary: PortfolioSummary;
   propertyDashboard: PropertySummary;
+  /** Get rent roll with charges and payments for a date range */
+  rentRoll: RentRollResponseType;
   search: SearchResultConnection;
   validatePasswordResetToken: ValidatePasswordResetTokenOutput;
   versionInfo: VersionInfo;
@@ -3167,6 +3189,11 @@ export type QueryCheckUserExistsArgs = {
 
 export type QueryCheckWorkspaceInviteHashIsValidArgs = {
   inviteHash: Scalars['String'];
+};
+
+
+export type QueryDelinquencyReportArgs = {
+  daysOverdue?: Scalars['Float'];
 };
 
 
@@ -3390,6 +3417,11 @@ export type QueryGetTimelineThreadsFromPersonIdArgs = {
 };
 
 
+export type QueryLeasePaymentHistoryArgs = {
+  leaseId: Scalars['ID'];
+};
+
+
 export type QueryPortfolioSummaryArgs = {
   month: Scalars['String'];
 };
@@ -3398,6 +3430,14 @@ export type QueryPortfolioSummaryArgs = {
 export type QueryPropertyDashboardArgs = {
   month: Scalars['String'];
   propertyId: Scalars['ID'];
+};
+
+
+export type QueryRentRollArgs = {
+  endDate?: InputMaybe<Scalars['String']>;
+  propertyId?: InputMaybe<Scalars['ID']>;
+  startDate?: InputMaybe<Scalars['String']>;
+  status?: InputMaybe<Array<Scalars['String']>>;
 };
 
 
@@ -3524,6 +3564,22 @@ export enum RemoteTableStatus {
   NOT_SYNCED = 'NOT_SYNCED',
   SYNCED = 'SYNCED'
 }
+
+export type RentRollResponseType = {
+  __typename?: 'RentRollResponseType';
+  charges: Array<Scalars['JSON']>;
+  summary: RentRollSummary;
+};
+
+export type RentRollSummary = {
+  __typename?: 'RentRollSummary';
+  chargesCount: Scalars['Int'];
+  overdueCount: Scalars['Int'];
+  paidCount: Scalars['Int'];
+  totalCharges: Scalars['Float'];
+  totalOutstanding: Scalars['Float'];
+  totalPaid: Scalars['Float'];
+};
 
 export type ResendEmailVerificationTokenOutput = {
   __typename?: 'ResendEmailVerificationTokenOutput';
@@ -4732,6 +4788,16 @@ export type GetPropertyDashboardQueryVariables = Exact<{
 
 export type GetPropertyDashboardQuery = { __typename?: 'Query', propertyDashboard: { __typename?: 'PropertySummary', propertyId: string, name: string, address?: string | null, totalUnits: number, occupiedUnits: number, occupancyPercent: number, monthlyRentRoll: number, monthlyCollected: number, monthlyDelinquent: number, openWorkOrderCount: number } };
 
+export type GetRentRollQueryVariables = Exact<{
+  startDate?: InputMaybe<Scalars['String']>;
+  endDate?: InputMaybe<Scalars['String']>;
+  propertyId?: InputMaybe<Scalars['ID']>;
+  status?: InputMaybe<Array<Scalars['String']> | Scalars['String']>;
+}>;
+
+
+export type GetRentRollQuery = { __typename?: 'Query', rentRoll: { __typename?: 'RentRollResponseType', charges: Array<any>, summary: { __typename?: 'RentRollSummary', totalCharges: number, totalPaid: number, totalOutstanding: number, chargesCount: number, paidCount: number, overdueCount: number } } };
+
 export type OnDbEventSubscriptionVariables = Exact<{
   input: OnDbEventInput;
 }>;
@@ -5443,6 +5509,57 @@ export function useGetPropertyDashboardLazyQuery(baseOptions?: Apollo.LazyQueryH
 export type GetPropertyDashboardQueryHookResult = ReturnType<typeof useGetPropertyDashboardQuery>;
 export type GetPropertyDashboardLazyQueryHookResult = ReturnType<typeof useGetPropertyDashboardLazyQuery>;
 export type GetPropertyDashboardQueryResult = Apollo.QueryResult<GetPropertyDashboardQuery, GetPropertyDashboardQueryVariables>;
+export const GetRentRollDocument = gql`
+    query GetRentRoll($startDate: String, $endDate: String, $propertyId: ID, $status: [String!]) {
+  rentRoll(
+    startDate: $startDate
+    endDate: $endDate
+    propertyId: $propertyId
+    status: $status
+  ) {
+    charges
+    summary {
+      totalCharges
+      totalPaid
+      totalOutstanding
+      chargesCount
+      paidCount
+      overdueCount
+    }
+  }
+}
+    `;
+
+/**
+ * __useGetRentRollQuery__
+ *
+ * To run a query within a React component, call `useGetRentRollQuery` and pass it any options that fit your needs.
+ * When your component renders, `useGetRentRollQuery` returns an object from Apollo Client that contains loading, error, and data properties
+ * you can use to render your UI.
+ *
+ * @param baseOptions options that will be passed into the query, supported options are listed on: https://www.apollographql.com/docs/react/api/react-hooks/#options;
+ *
+ * @example
+ * const { data, loading, error } = useGetRentRollQuery({
+ *   variables: {
+ *      startDate: // value for 'startDate'
+ *      endDate: // value for 'endDate'
+ *      propertyId: // value for 'propertyId'
+ *      status: // value for 'status'
+ *   },
+ * });
+ */
+export function useGetRentRollQuery(baseOptions?: Apollo.QueryHookOptions<GetRentRollQuery, GetRentRollQueryVariables>) {
+        const options = {...defaultOptions, ...baseOptions}
+        return Apollo.useQuery<GetRentRollQuery, GetRentRollQueryVariables>(GetRentRollDocument, options);
+      }
+export function useGetRentRollLazyQuery(baseOptions?: Apollo.LazyQueryHookOptions<GetRentRollQuery, GetRentRollQueryVariables>) {
+          const options = {...defaultOptions, ...baseOptions}
+          return Apollo.useLazyQuery<GetRentRollQuery, GetRentRollQueryVariables>(GetRentRollDocument, options);
+        }
+export type GetRentRollQueryHookResult = ReturnType<typeof useGetRentRollQuery>;
+export type GetRentRollLazyQueryHookResult = ReturnType<typeof useGetRentRollLazyQuery>;
+export type GetRentRollQueryResult = Apollo.QueryResult<GetRentRollQuery, GetRentRollQueryVariables>;
 export const OnDbEventDocument = gql`
     subscription OnDbEvent($input: OnDbEventInput!) {
   onDbEvent(input: $input) {

@@ -27,9 +27,13 @@ export enum AppPath {
   PmRecordIndexPage = '/pm/objects/:objectNamePlural',
   PmRecordShowPage = '/pm/object/:objectNameSingular/:objectRecordId',
   PmPropertyDashboard = '/pm/property/:propertyId',
+  PmRentRoll = '/pm/rent-roll',
   PmAccounting = '/pm/accounting',
   PmInventory = '/pm/inventory',
   PmInspections = '/pm/inspections',
+  PmTenants = '/pm/tenants',
+  PmApplications = '/pm/applications',
+  PmShowings = '/pm/showings',
 
   Settings = `settings`,
   SettingsCatchAll = `/${Settings}/*`,

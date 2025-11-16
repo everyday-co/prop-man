@@ -7,6 +7,8 @@ import {
 } from '@nestjs/common';
 
 import { FindRecordsService } from 'src/engine/core-modules/record-crud/services/find-records.service';
+import { CreateRecordService } from 'src/engine/core-modules/record-crud/services/create-record.service';
+import { UpdateRecordService } from 'src/engine/core-modules/record-crud/services/update-record.service';
 import { ScopedWorkspaceContextFactory } from 'src/engine/twenty-orm/factories/scoped-workspace-context.factory';
 import {
   type LeaseChargeRecord,
@@ -33,6 +35,8 @@ export class PropertyManagementObjectService {
 
   constructor(
     private readonly findRecordsService: FindRecordsService,
+    private readonly createRecordService: CreateRecordService,
+    private readonly updateRecordService: UpdateRecordService,
     private readonly scopedWorkspaceContextFactory: ScopedWorkspaceContextFactory,
   ) {
     const context = this.scopedWorkspaceContextFactory.create();
@@ -186,5 +190,51 @@ export class PropertyManagementObjectService {
     }
 
     return records;
+  }
+
+  async createPayment(
+    paymentData: Partial<PaymentRecord>,
+  ): Promise<PaymentRecord> {
+    const { workspaceId, userWorkspaceId } = this.ensureContext();
+
+    const response = await this.createRecordService.execute({
+      objectName: PAYMENT_OBJECT_NAME,
+      objectRecord: paymentData,
+      workspaceId,
+      userWorkspaceId,
+    });
+
+    if (!response.success || !response.result) {
+      this.logger.error(
+        `Failed to create payment: ${response.error ?? response.message}`,
+      );
+      throw new InternalServerErrorException('Unable to create payment');
+    }
+
+    return response.result as PaymentRecord;
+  }
+
+  async updateLeaseCharge(
+    chargeId: string,
+    updates: Partial<LeaseChargeRecord>,
+  ): Promise<LeaseChargeRecord> {
+    const { workspaceId, userWorkspaceId } = this.ensureContext();
+
+    const response = await this.updateRecordService.execute({
+      objectName: LEASE_CHARGE_OBJECT_NAME,
+      objectRecordId: chargeId,
+      objectRecord: updates,
+      workspaceId,
+      userWorkspaceId,
+    });
+
+    if (!response.success || !response.result) {
+      this.logger.error(
+        `Failed to update lease charge: ${response.error ?? response.message}`,
+      );
+      throw new InternalServerErrorException('Unable to update lease charge');
+    }
+
+    return response.result as LeaseChargeRecord;
   }
 }

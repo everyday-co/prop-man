@@ -3,6 +3,7 @@ import { format, subMonths } from 'date-fns';
 import styled from '@emotion/styled';
 import { useLingui } from '@lingui/react/macro';
 import { Link } from 'react-router-dom';
+import { useQuery } from '@apollo/client';
 
 import { AppPath } from 'twenty-shared/types';
 import { getAppPath } from 'twenty-shared/utils';
@@ -14,12 +15,11 @@ import { Select } from '@/ui/input/components/Select';
 import { Loader } from 'twenty-ui/feedback';
 import { Card } from 'twenty-ui/layout';
 import { H2Title } from 'twenty-ui/display';
+import { useApolloCoreClient } from '@/object-metadata/hooks/useApolloCoreClient';
 
 import { StyledPMParagraph } from '../components/PMParagraph';
-import {
-  useGetPortfolioSummaryQuery,
-  type GetPortfolioSummaryQuery,
-} from '~/generated/graphql';
+import { GET_PORTFOLIO_SUMMARY } from '../graphql/queries/getPortfolioSummary';
+import { type GetPortfolioSummaryQuery } from '~/generated/graphql';
 
 const StyledKPIGrid = styled.div`
   display: grid;
@@ -165,9 +165,15 @@ export const PortfolioDashboardPage = () => {
   const [sortKey, setSortKey] = useState<PropertySortKey>('monthlyDelinquent');
   const [sortDirection, setSortDirection] = useState<SortDirection>('desc');
 
-  const { data, loading, refetch } = useGetPortfolioSummaryQuery({
-    variables: { month: selectedMonth },
-  });
+  const apolloCoreClient = useApolloCoreClient();
+
+  const { data, loading, refetch } = useQuery<GetPortfolioSummaryQuery>(
+    GET_PORTFOLIO_SUMMARY,
+    {
+      variables: { month: selectedMonth },
+      client: apolloCoreClient,
+    },
+  );
 
   const summary = data?.portfolioSummary;
   const propertyRows = useMemo(

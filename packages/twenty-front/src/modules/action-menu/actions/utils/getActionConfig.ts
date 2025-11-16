@@ -1,6 +1,8 @@
+import { APPLICATION_ACTIONS_CONFIG } from '@/action-menu/actions/record-actions/constants/ApplicationActionsConfig';
 import { DASHBOARD_ACTIONS_CONFIG } from '@/action-menu/actions/record-actions/constants/DashboardActionsConfig';
 import { DEFAULT_RECORD_ACTIONS_CONFIG } from '@/action-menu/actions/record-actions/constants/DefaultRecordActionsConfig';
 import { RECORD_PAGE_LAYOUT_ACTIONS_CONFIG } from '@/action-menu/actions/record-actions/constants/RecordPageLayoutActionsConfig';
+import { SHOWING_ACTIONS_CONFIG } from '@/action-menu/actions/record-actions/constants/ShowingActionsConfig';
 import { WORKFLOW_ACTIONS_CONFIG } from '@/action-menu/actions/record-actions/constants/WorkflowActionsConfig';
 import { WORKFLOW_RUNS_ACTIONS_CONFIG } from '@/action-menu/actions/record-actions/constants/WorkflowRunsActionsConfig';
 import { WORKFLOW_VERSIONS_ACTIONS_CONFIG } from '@/action-menu/actions/record-actions/constants/WorkflowVersionsActionsConfig';
@@ -39,6 +41,12 @@ export const getActionConfig = ({
       }
 
       return DEFAULT_RECORD_ACTIONS_CONFIG;
+    }
+    case 'application': {
+      return APPLICATION_ACTIONS_CONFIG;
+    }
+    case 'showing': {
+      return SHOWING_ACTIONS_CONFIG;
     }
     default: {
       return DEFAULT_RECORD_ACTIONS_CONFIG;

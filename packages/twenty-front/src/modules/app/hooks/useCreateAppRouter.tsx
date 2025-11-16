@@ -34,6 +34,8 @@ import { PropertyDashboardPage } from '@/property-management/pages/PropertyDashb
 import { PMAccountingPage } from '@/property-management/pages/PMAccountingPage';
 import { PMInventoryPage } from '@/property-management/pages/PMInventoryPage';
 import { PMInspectionsPage } from '@/property-management/pages/PMInspectionsPage';
+import { PMTenantsPage } from '@/property-management/pages/PMTenantsPage';
+import { RentRollPage } from '@/property-management/pages/RentRollPage';
 
 export const useCreateAppRouter = (
   isFunctionSettingsEnabled?: boolean,
@@ -88,6 +90,7 @@ export const useCreateAppRouter = (
             path="property/:propertyId"
             element={<PropertyDashboardPage />}
           />
+          <Route path="rent-roll" element={<RentRollPage />} />
           <Route path="accounting" element={<PMAccountingPage />} />
           <Route path="inventory" element={<PMInventoryPage />} />
           <Route path="inspections" element={<PMInspectionsPage />} />
@@ -106,6 +109,15 @@ export const useCreateAppRouter = (
           <Route
             path="work-orders"
             element={<Navigate to="/pm/objects/workOrders" replace />}
+          />
+          <Route path="tenants" element={<PMTenantsPage />} />
+          <Route
+            path="applications"
+            element={<Navigate to="/pm/objects/applications" replace />}
+          />
+          <Route
+            path="showings"
+            element={<Navigate to="/pm/objects/showings" replace />}
           />
           <Route
             path="objects/:objectNamePlural"

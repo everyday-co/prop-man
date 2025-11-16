@@ -7,6 +7,7 @@ export const UNTESTED_APP_PATHS = [
   AppPath.PmRecordIndexPage,
   AppPath.PmRecordShowPage,
   AppPath.PmPropertyDashboard,
+  AppPath.PmRentRoll,
   AppPath.PmAccounting,
   AppPath.PmInventory,
   AppPath.PmInspections,
