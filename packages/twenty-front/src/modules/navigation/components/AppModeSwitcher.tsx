@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 import { useTheme } from '@emotion/react';
 import { useNavigate } from 'react-router-dom';
 import { useRecoilState, useRecoilValue } from 'recoil';
-import { msg } from '@lingui/core/macro';
+import { useLingui } from '@lingui/react/macro';
 
 import {
   activeAppState,
@@ -12,7 +12,6 @@ import {
   lastVisitedAppRoutesState,
   type LastVisitedAppRoutes,
 } from '@/navigation/states/lastVisitedAppRoutesState';
-import { MenuItemHotKeys } from 'twenty-ui/navigation/menu/menu-item/components/MenuItemHotKeys';
 import { IconArrowUpRight } from 'twenty-ui/display';
 
 const DEFAULT_ROUTES: LastVisitedAppRoutes = {
@@ -81,6 +80,7 @@ const StyledLabel = styled.span`
 export const AppModeSwitcher = () => {
   const navigate = useNavigate();
   const theme = useTheme();
+  const { t } = useLingui();
   const [activeApp, setActiveApp] = useRecoilState(activeAppState);
   const lastVisitedAppRoutes = useRecoilValue(lastVisitedAppRoutesState);
 
@@ -91,8 +91,8 @@ export const AppModeSwitcher = () => {
     navigate(target);
   };
 
-  const label = activeApp === 'CRM' ? msg`Go to Property Mgmt` : msg`Go to CRM`;
-  const hotKeys = activeApp === 'CRM' ? ['G', 'P'] : ['G', 'C'];
+  const label =
+    activeApp === 'CRM' ? t`Go to Property Mgmt` : t`Go to CRM`;
 
   return (
     <StyledSwitcher type="button" onClick={handleClick}>
@@ -105,7 +105,6 @@ export const AppModeSwitcher = () => {
       </StyledIconContainer>
       <StyledContent>
         <StyledLabel>{label}</StyledLabel>
-        <MenuItemHotKeys hotKeys={hotKeys} />
       </StyledContent>
     </StyledSwitcher>
   );
